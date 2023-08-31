@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>whogohost</title>
+    <style>
+        body{
+            background:linear-gradient(180deg, darkblue,blue);
+            padding: 0px;
+        }
+        .hr{
+            width: 300px;
+        }
+        .who{
+            display: flex;
+            flex-direction: row;
+            height: 400px;
+            margin-top: 0px;
+            
+            
+        }
+        .scl{
+            display: flex;
+            flex-direction: column;
+            background-color: white;
+            width: 600px;
+            height: 600px;
+            margin-left:400px ;
+            padding: 20px;
+            margin-top: 200px;
+        
+        }
+        .hr{
+            display: flex;
+            flex-direction: row;
+        }
+        .inp{
+            width: 400px;
+            height: 50px;
+        }
+        .ch{
+            display: flex;
+            flex-direction: row;
+        }
+        .pix{
+            top: 20px;
+            left:100px
+        }
+    </style>
+</head>
+<body>
+  <div class="who"> 
+       <div class="pix"><h3 style="font-size: 40px;color: white; ">Whogohost</h3></div>    
+<!--<div class="who"><h1 style="margin-top: 100px; font-size: 50px;color: white;text-align: center;">W</h1><h3 style="font-size: 40px; text-align: center; color: white;margin-top: 80px;">hogohost</h3>-->
+     <div class="scl">
+        <h3 style="font-size: 40px; color: black;">Secure Client Login</h3><br>
+        <label for="text">Email Address</label><input type="text" class="inp" placeholder="Enter Email"><br>
+        <label for="password">password</label><input type="password" class="inp" placeholder="password"><br>
+       <div class="ch"> <input type="checkbox" style="margin-left: 0px;"><label for="checkbox">Remeber Me</label></div><br>
+        <button class="inp" style="background-color: blue;">Login</button>
+        <div class="hr"><hr class="hr"> or  <hr class="hr"></div>
+     </div>
+  </div>  
+</body>
+</html>
