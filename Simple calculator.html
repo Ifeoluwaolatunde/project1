@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<!-- saved from url=(0053)file:///C:/Users/USER/Desktop/New%20folder/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple calculator</title>
+    <style>
+        body{
+            background-image: url(newcal.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        .cal{
+            border: 2px solid grey;
+            width: 400px;
+            height: 250px;
+            padding-top: 5PX;
+            padding: 30px;
+            margin-left:400px ;
+        }
+        #fali{
+            width: 100px;
+            padding: 12px;
+            font-size: 15px;
+        }
+        #mali{
+            width: 100px;
+            padding: 12px;
+            font-size: 15px;
+        }
+        #answer{
+            font-size: 25px;
+        }
+         .bam{
+            margin-left: 15px;
+            width: 30px;
+         }
+        .bam:hover{
+            width: 30px;
+            padding: 5px;
+            box-shadow: 3px 3px 3px black;
+            margin-right: 5px;
+        }
+        .sode{
+            display: flex;
+            flex-direction: row;
+        }
+        .sign{
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .lac{
+                width: 400px;
+                padding: 15px;
+                height: 200px;
+                margin-bottom:50px;
+                border: 2px solid black;
+
+            }
+            #amount{
+                width: 300px;
+                height: 30px;
+            }
+            #rad{
+                padding: 12px;
+                border-radius: 50px;
+                background-color: teal;
+                color:gray;
+            }
+            #ade{
+                font-size: 30px;
+            }
+            label{
+                font-size: 20px;
+            }
+        @media  screen and (max-width: 768px){
+            body{
+                padding: 0px;
+                background-image: none;
+                background-color: gray;
+            }
+            .sode{
+            display: flex;
+            flex-direction: column;
+            }
+            #rad{
+                padding: 12px;
+                border-radius: 50px;
+                background-color: teal;
+                color:gray;
+            }
+            #amount{
+                width: 120px;
+                height: 30px;
+            }
+            .lac{
+                width: 200px;
+                padding: 5px;
+                height: 400px;
+                margin-bottom:50px ;
+
+            }
+            .cal{
+                width: 200px;
+                padding: 5px;
+                margin: 0px;
+                height: 400px;
+                border: 2px solid black;
+            }
+            .bam{
+                margin-left: 10px;
+            }
+            #ade{
+                font-size: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="sode">
+        <div class="lac">
+          
+            <label for="amount">Investment Amount</label>
+            <input type="number" id="amount" placeholder="Input Amount Invested">
+           <br>
+            <label for="duration">Select Duration</label>
+            <select name="" id="duration">
+            <option value="1">1Month</option>
+            <option value="2">2Month</option>
+            <option value="3">3Month</option>
+            <option value="4">4Month</option>
+            <option value="5">5Month</option>
+            <option value="6">6Month</option>
+            <option value="7">7Month</option>
+            <option value="8">8Month</option>
+            <option value="9">9Month</option>
+            <option value="10">10Month</option>
+            <option value="11">11Month</option>
+            <option value="12">12Month</option>
+                </select><br><br>
+                <button id="rad">calculate</button>
+                <br>
+                <span id="ade"></span>
+        </div>
+        <div class="cal">
+
+            <h3>SIMPLE CALCULATOR</h3>
+            <input type="number" id="fali"><br>
+            <span id="sign"></span><br>
+            <input type="number" id="mali"><br><br>
+            <span id="answer"></span><br>
+             <button style="font-size: 20px;" onclick="add()" class="bam"><strong>+</strong></button>
+             <button style="font-size: 20px;" onclick="minus()" class="bam"><strong>-</strong></button>
+             <button style="font-size: 20px;" onclick="multiply()" class="bam"><strong>*</strong></button>
+             <button style="font-size: 20px;" onclick="divide()" class="bam"><strong>/</strong></button><br><br><br>
+             <div><button><a href="file:///C:/Users/USER/Desktop/New%20folder/history.html">HISTORY OF JavaScript</a></button></div>
+        </div>
+    </div>    
+    <script>
+
+     const amou= Number(document.getElementById('amount'));
+     const k= 15/100;
+     const roi= Number( amou*k);
+     const gad=document.querySelector('#rad')
+     const pa= document.getElementById('ade').innerHTML
+
+     
+     const car= document.querySelector('#duration').value;
+
+
+    document.getElementById('rad').addEventListener('click',()=>{
+     let invest=document.getElementById('amount').value;
+     let duration= document.getElementById('duration').value;
+     let profit=0.15*invest;
+     let withdrawl=Number(profit * duration)+ Number(invest);
+     document.getElementById('ade').innerHTML=`You will withdraw${withdrawl} after ${duration}Month(s) you invest ${invest}with us `
+   ; })
+
+
+
+     function add(){
+        let a=  Number(  document.getElementById('fali').value);
+        let b= Number(  document.getElementById('mali').value);
+        let c= document.getElementById('sign').innerHTML=`<strong>+</strong>`;
+        let ans= a+b;
+        let d= document.getElementById('answer').innerHTML=`=${ans}`
+     }
+
+     function minus(){
+        let e=  Number(  document.getElementById('fali').value);
+        let f= Number(  document.getElementById('mali').value);
+        let g= document.getElementById('sign').innerHTML=`<strong>-</strong>`;
+        let ans= e-f;
+        let h= document.getElementById('answer').innerHTML=`=${ans}`
+     }
+     function multiply(){
+        let i=  Number(  document.getElementById('fali').value);
+        let j= Number(  document.getElementById('mali').value);
+        let k= document.getElementById('sign').innerHTML=`<strong>*</strong>`;
+        let ans= i*j;
+        let l= document.getElementById('answer').innerHTML=`=${ans}`
+     }
+     function divide(){
+        let m=  Number( document.getElementById('fali').value);
+        let n=  Number( document.getElementById('mali').value);
+        let o= document.getElementById('sign').innerHTML=`*`
+        let ans= m/n
+        let p= document.getElementById('answer').innerHTML=`=${ans}`
+     }
+    </script>
+
+</body></html>

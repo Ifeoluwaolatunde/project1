@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" 
+    crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" 
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <style>
+        .sticker{ 
+            border: 2px solid black;
+            text-align: center;
+            padding: 30px;
+            background-color: white;
+            color: rgb(194, 193, 193);
+            justify-content: space-between !important;
+            margin-left: 30px;
+            border-radius: 5px;
+        }
+        .stickers{ 
+            border: 2px solid black;
+            text-align: center;
+            padding: 30px;
+            background-color: white;
+            color: rgb(194, 193, 193);
+            justify-content: space-between !important;
+            margin-left: 30px;
+            border-radius: 5px;
+        }
+        .stickera{ 
+            border: 2px solid black;
+            text-align: center;
+            padding: 30px;
+            background-color: white;
+            color: rgb(194, 193, 193);
+            justify-content: space-between !important;
+            margin-left: 30px;
+            border-radius: 5px;
+        }
+        #dada{
+            width: 300px;
+            height: 50px;
+            position: sticky;
+
+        }
+        .dada:hover{
+            border: 2 px black;
+        }
+        .cad{
+            width: 600px;
+            margin-left: 380px;
+            
+        }
+        .sam{
+            display: flex;
+            flex-direction: row;
+        }
+        .san{
+            display: flex;
+            flex-direction: row;
+        }
+        .sap{
+            display: flex;
+            flex-direction: row;
+        }
+        .nai{
+            display: flex;
+            flex-direction: column;
+        }
+        .ain{
+            display: flex;
+            flex-direction: row;
+        }
+        .aina{
+            display: flex;
+            flex-direction: row;
+        }
+        .fanta{
+            width: 300px;
+            height: 350px;
+        }
+        .sticker:hover{
+            margin-left: 35px;
+            box-shadow: 10px 10px 5px white;
+        }
+        .stickers:hover{
+            margin-left: 35px;
+            box-shadow: 10px 10px 5px white;
+        }
+        .stickera:hover{
+            margin-left: 35px;
+            box-shadow: 10px 10px 5px white;
+        }
+        .sak{
+            margin-top: 15px;
+            padding: 2px;
+            margin-left: 5px;
+            border: none;
+            border-radius: 5px;
+        }
+        .sak:hover{
+            background-color: rgb(204, 201, 201);
+
+        }
+        #yale{
+            visibility: hidden;
+        }
+        .fanta{
+            margin-right: 20px;
+        }
+        .sade{
+            margin-top: 5px;
+            margin-right: 500px;
+            margin-left: -30px;
+        }
+        .fanta:hover{
+            margin-left: 25px;
+            box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.4);
+
+        }
+        .ogo{
+            visibility: visible;
+        }
+        .bobola{
+            display: flex;
+            flex-direction: row;
+            text-align: center;
+            margin-left: 400px;
+            margin-top: 10px;
+            margin-bottom: 150px;
+        }
+        .med{
+                display: flex;
+                flex-direction: row;
+            
+        }
+        .fang{
+            visibility: hidden;
+        }
+        .baba{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            text-align: center;
+        }
+        #sol{
+            position: absolute;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 15px;
+            margin-left: -400px !important;
+            
+        }
+        .sew{
+            margin-right: 20px;
+            width: 300px;
+            height: 300px;
+        }
+        .buba{
+            font-size: 50px;
+            font-family: sans-serif;
+        }
+        li{
+            list-style-type: none;
+        }
+        .pro{
+            margin-bottom: 120px;
+        }
+        .inter{
+            width: 100px;
+            height: 50px;
+        }
+        .inter:hover{
+            margin-left: 0px;
+            box-shadow: 0px 5px 5px rgb(255, 255, 255, 0.1);
+
+
+        }
+        .tope{
+            background-color: white;
+            color: gray;
+            border: none;
+        }
+        .tope:hover{
+            border-left:1px solid rgb(168, 168, 168) ;
+            background-color: white;
+            color: gray;
+        }
+        #bale{
+            visibility: visible;
+        }
+        .zad{
+            width: 300px;
+            height: 350px;
+        }
+        .zad:hover{
+            margin-left: 25px;
+            box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.4);
+        }
+        @media screen and (max-width: 768px){
+            .nai{
+            display: flex;
+            flex-direction: column;
+             }
+            .ain{
+            display: flex;
+            flex-direction: column;
+            margin-top: -250px;
+             }
+             .aina{
+                display: flex;
+              flex-direction: column;
+              
+             }
+             .sade{
+                margin-right: 5px !important;
+             }
+             .baba{
+            display: flex;
+            flex-direction: column;
+            margin-left: -170px !important;
+        
+             }
+             #bale{
+                visibility: hidden;
+                
+             }
+             .men{
+                margin-top: -250px;
+            }
+             .cad{
+            width: 300px;
+            margin-left: 10px;
+            }
+             .bobola{
+            display: flex;
+            flex-direction: column;
+            margin-left: -70px !important;
+             }
+             .sam{
+            display: flex;
+            flex-direction: column;
+             }
+             #yale{
+              visibility: visible !important;
+             }
+             .san{
+            display: flex;
+            flex-direction: row;
+            }
+            img{
+                width: 300px;
+                height: 300px;
+            }
+            .med{
+                display: flex;
+                flex-direction: column;
+                
+            }
+            .zad:hover{
+                margin-left: 25px;
+               box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.4);
+            }
+            .zad{
+                margin-bottom: 15px;
+            }
+            .sap{
+            display: flex;
+            flex-direction: row;
+            margin-top: 5px;
+            }
+            .buba{
+                font-size: 30px;
+                font-family: sans-serif;
+            }
+            .pro{
+            margin-bottom: 120px;
+            }
+            .ogo{
+            visibility: hidden;
+             }
+            .tore{
+                display: flex;
+                flex-direction: row;
+                margin-left:0px ;
+            }
+            .fang{
+                visibility: visible;
+                margin-bottom: -400px !important;
+            }
+            .sticker{
+                border: 2px solid black;
+            text-align: center;
+            padding: 20px;
+            background-color: white;
+            color: rgb(194, 193, 193);
+            justify-content: space-between !important;
+            margin-left: 15px;
+            border-radius: 5px;
+            width: 150px;
+            height: 120px;
+            }
+            .stickers{ 
+            border: 2px solid black;
+            text-align: center;
+            padding: 20px;
+            background-color: white;
+            color: rgb(119, 118, 118);
+            justify-content: space-between !important;
+            margin-left: 15px;
+            border-radius: 5px;
+            width: 150px;
+            height: 120px;
+            }
+            .stickera{ 
+            border: 2px solid black;
+            text-align: center;
+            padding: 40px;
+            background-color: white;
+            color: rgb(100, 99, 99);
+            justify-content: space-between !important;
+            margin-left: 15px;
+            border-radius: 5px;
+            width: 150px;
+            height: 120px;
+            }
+            #dada{
+            width: 100px;
+            height:50px;
+            margin-left: 10px !important;
+           }
+           .pam{
+            visibility: hidden;
+           }
+           .fall{
+            margin-left: -60px !important;
+            font-size: medium;
+           }
+           .mang{
+            visibility: hidden;
+           }
+        }
+    </style>
+</head>
+<body>
+    <div>
+          <div>
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#"><img src="confinder.png" class="inter"></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="offcanvas navbar-offcanvas" id="navbarSupportedContent" style="margin-top: 0px !important;">
+                    <ul class="navbar-nav " style="width: 200px;padding-top: 400px;padding-left: 20px;">
+                      <li class="nav-item">
+                        <a class="nav-link active"  href="#" style="margin-top: -280px;">Icon</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#" style="margin-top: -270px;">Illustration</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#" style="margin-top: -260px;">3D</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#" style="margin-top: -250px;">Stickers</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle tope" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="margin-top: -300px;">
+                          Designers
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Top Selling</a></li>
+                          <li><a class="dropdown-item" href="#">Most followers</a></li>
+                          <li><a class="dropdown-item">Newest Designers </a></li>
+                          <li><a class="dropdown-item" href="#">Most icons</a></li>
+                          <li><a class="dropdown-item" href="#">Following</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle tope" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="margin-top: -300px;">
+                          Projects
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="wappalyzer.html">Wappalyser</a></li>
+                          <li><a class="dropdown-item" href="pixel.html">PIXELGRADE</a></li>
+                          <li><a class="dropdown-item" href="whogohost.png">WHOGOHOST </a></li>
+                          <li><a class="dropdown-item" href="paypal.html">Paypal</a></li>
+                          
+                        </ul>
+                      </li>
+                      <li>
+                        <p class="d-inline-flex gap-1">
+                            <a class="btn btn-primary tope" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                              Pricing
+                            </a>
+                            <!--<button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                              Button with data-bs-target
+                            </button>-->
+                          </p>
+                          <div class="collapse" id="collapseExample">
+                            <div class="card card-body"id="sol">
+                             <!-- <div style="background-color: rgb(64, 182, 64);" class="sew">
+                                <h4>Pricing</h4>
+                                <p>comparing all pricing solutions<br>
+                                 Option for individuals and teams</p>
+                                 <h4>See all</h4>
+                              </div>
+
+
+                              <div style="background-color: rgb(64, 66, 182);" class="sew">
+                                <div style="display: flex;flex-direction: row;"><h4>Pro subscription</h4> <button>7-day free trial </button></div>
+                                <p>Choose a flexible subscription plan<br>
+                                 for you and your team members</p>
+                                 <h4><strong>See the benefits</strong></h4>
+                              </div>
+
+
+                              <div style="background-color: rgb(236, 63, 63);" class="sew">
+                                <h4>Pay as you go</h4>
+                                <p>Pay for the graphics you need,<br>
+                                 When you need them, no strings<br> attached</p>
+                                 <h4><strong>How it works</strong></h4>
+                              </div>
+
+                              <div style="background-color: white" >
+                                <ul>
+                                    <li></>API</li>
+                                    <li>For Enterprise <button style="width: 10px;height: 10px;background-color: rgb(114, 228, 114); color: rgb(24, 61, 24);">New</button></li>
+                                    <li>For Education</li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                      </li>
+
+                     
+                    </ul>-->
+                    
+                  </div>
+                </div>
+              </nav>
+          </div>
+
+          <div style="text-align: center;" class="pro" >
+            <h1 class="buba">Make beautiful designs faster</h1>
+             <p style="font-size: 15px;">Millions of graphics for your design project. Created by independent designers.</p>
+             <div class="input-group cad" >
+                <input type="text" class=" form-control " id="dada">
+                <span class="input-group-text"><select name="" id="" style="background-color:rgb(219, 218, 218) ;">
+                    <option value="" class="active"  style="background-color: grey;">Icons <i class="bi bi-search" id="yale" style="color: black;"></i></option>
+                <option value="">Illustration</option>
+                <option value="">3D Illustrations</option>
+                <option value="">Stickers</option></select></span>
+                <span class="input-group-text" id="bale"><i class="bi bi-search" id="bale" style="color: black;"></i></span>
+             </div>
+
+              <div class="bobola"><div class="bola"><button class="sak">Autunm icons</button><button class="sak">Halloween icons</button></div><div class="bola"><button class="sak">AI 3D illustration</button><button class="sak">school illustration</button></div></div>
+               <div class="sam"><div class="san"><button class="sticker"><strong style="color: grey;"> Icons</strong><br> <p class="pam">6Million icons at your fringertiops</p></button><button class="sticker"><strong>Illustrations</strong><br><p class="pam">Give your design a personal touch</p></button></div><div class="sap"><button class="stickers"> <strong style="color: gray;">3D Illustration<br><p class="pam">Bring depth to your design</p></strong></button><button class="stickera"> <strong>sticker</strong><br><p class="pam">Add some visual flair</p></button></div>
+           </div>
+
+
+
+            <div class="nai">
+                <div class="fall"><h4><strong class="sade">Icons</strong>Explore icons</h4><br><p>6million icons at your fingertip</p></div>
+                 <div class="aina">
+                    <img src="akoko.png" class="fanta" >
+                    <img src="ekeji.png" class="fanta" >
+                    <img src="eketa.png" class="fanta" >
+                    <img src="ekerin.png" class="fanta" >
+                  </div>
+                  <div>
+                    <img src="hand.PNG" class="ogo">
+                  </div>
+
+                    <br><br>
+                    <div class="fall"><h4 ><strong class="sade">Illustrations</strong> Explore illustrations</h4><br><h5>Give your designes a nice touch</h5></div>
+                    <div class="ain">
+                        <img src="ekarun .png" class="fanta" >
+                        <img src="ekefa.png" class="fanta">
+                        <img src="ekeje .png" class="fanta">
+                        <img src="ekejo.png" class="fanta">
+                        <br><br>
+                    </div>
+                    <div>
+                        <img src="hand in hand.PNG" class="ogo" >
+                    </div>
+
+
+                    <div class="fall"><h4><strong class="sade">3D illustrations</strong>Explore 3D illustration</h4></div>
+                    <div class="ain">
+                    <img src="ekesan.png" class="fanta">
+                    <img src="ekewa.png" class="fanta">
+                    <img src="eleven.png" class="fanta">
+                    <img src="twelve.png" class="fanta">
+                  </div>
+           </div>
+           <br><br>
+           <div>
+                   <img src="ocean.PNG" class="ogo">
+           </div>
+
+           <div class="men">
+            <h4>Trending searches</h4>
+            <div class="tore"><button style="padding:5px;border: none;border-right: 1px solid gray;">Autumn Icons</button><button style="border: none;border-right: 1px solid gray;">Halloween Icons</button><button style="border: none;border-right: 1px solid gray;">Ai 3D Illustration</button></div>
+           </div><br><br>
+
+           <div class="med">
+            <img src="red.png" style="margin-bottom: 15px;" class="fanta">
+            <img src="blue.png" class="zad">
+            <img src="dblue.png" class="zad">
+            <img src="white.png" class="fanta">
+           </div>
+           <br><br>
+           <div class="baba">
+             <div>
+                <h4>Explore</h4>
+                <ul>
+                    <li>Icon</li>
+                    <li>Illustration</li>
+                    <li>3D illustrations</li>
+                    <li>Designers</li>
+                    <li>Free icons</li>
+                </ul>
+             </div>
+             <div>
+                <h4>Pricing</h4>
+                <ul>
+                    <li>Pricing overview</li>
+                    <li>Pay as you go</li>
+                    <li>API</li>
+                    <li>For education</li>
+                    <li>Contact sales</li>
+                </ul>
+             </div>
+             <div>
+                <h4>Help & Support</h4>
+                <ul>
+                    <li>Contact support</li>
+                    <li>Knowledge base</li>
+                    <li>Service  status</li>
+                    <li>That's new</li>
+                    <li>Request a quote</li>
+                </ul>
+             </div>
+             <div>
+                <h4>Company</h4>
+                <ul>
+                    <li>About Iconfinder</li>
+                    <li>Partner network</li>
+                    <li>Referral program</li>
+                    <li>Cupon code</li>
+                    <li>Become a contributor</li>
+                </ul>
+             </div>
+           </div>
+           <div style="display: flex;flex-direction: column;margin-left: -100px;" class="fang">
+            <div><img src="confinder.png" style="width: 150px;height: 150px;"></div>
+            <div>
+            <ul>
+                <li style="list-style-type: none;">Terms of Service</li>
+                <br>
+                <li style="list-style-type: none;">Privacy Policy</li>
+                <br>
+                <li style="list-style-type: none;">Return and Refund Policy</li>
+           </ul>
+            </div>
+           </div>
+
+           <div>
+            <img src="score.PNG" class="mang" style="margin-top: -200px;">
+           </div><br>
+           <div><img src="down.PNG" class="mang"></div>
+
+
+
+
+
+    </div>
+</body>
+</html>
