@@ -23,65 +23,7 @@
             box-shadow: inset;
             justify-content: center;
         }
-        @media screen and (max-width:768px){
-            .d1{
-                background-color: white;
-                color: grey;
-                padding: 15px;
-                width: 200px;
-                height: 600px;
-                justify-content: center;
-                border-radius: 10px;
-                box-shadow: 0px 0px 5px rgba(0,0, 0, 0.5);
-                visibility:visible ;
-
-
-            }
-            .for2{
-            background-color: rgb(158, 94, 218);
-            height: 200px;
-            box-shadow: inset 0px 0px 5px rgba(225,225, 225, 0.3);
-            padding-top: 10px;
-
-            
-            }
-            .int{
-            margin-bottom: 5px;
-            width: 120px;
-            }
-            .in1{
-            border: 2px solid rgb(202, 202, 202);
-            border-radius: 5px;
-            outline: none;
-            }
-            .in1:hover{
-            border: 2px solid rgb(190, 165, 212);
-            box-shadow: 0px 0px 5px rgb(196, 153, 236);
-            }
-            input:hover{
-            border: 2px solid rgb(152, 73, 226);
-            box-shadow: 0px 0px 5px rgb(150, 77, 218);
-            }
-            .ash:hover{
-            border: 3px solid white;
-            padding:5px 10px ;
-            margin-left: 33cm;
-            }
-            .mint:hover{
-            border: 3px solid white;
-           }
-           .note{
-             background-color:rgba(0,0, 0, 0.5);
-            color: white;
-            margin-top: 60px;
-            font-size: larger;
-            text-align: center;
-            } 
-
-        }
-
-
-
+        
 
         .for2{
             background-color: rgb(158, 94, 218);
@@ -165,6 +107,65 @@
        h4{
         font-size: small !important;
        }
+       @media screen and (max-width:768px){
+            .d1{
+                background-color: white;
+                color: grey;
+                padding: 15px;
+                width: 350px;
+                height: 600px;
+                justify-content: center;
+                border-radius: 10px;
+                box-shadow: 0px 0px 5px rgba(0,0, 0, 0.5);
+                visibility:visible ;
+
+
+            }
+            .for2{
+            background-color: rgb(158, 94, 218);
+            height: 200px;
+            box-shadow: inset 0px 0px 5px rgba(225,225, 225, 0.3);
+            padding-top: 10px;
+
+            
+            }
+            .int{
+            margin-bottom: 5px;
+            width: 120px;
+            }
+            .in1{
+            
+            border: 2px solid rgb(202, 202, 202);
+            border-radius: 5px;
+            outline: none;
+            }
+            .in1:hover{
+            border: 2px solid rgb(190, 165, 212);
+            box-shadow: 0px 0px 5px rgb(196, 153, 236);
+            }
+            input:hover{
+            border: 2px solid rgb(152, 73, 226);
+            box-shadow: 0px 0px 5px rgb(150, 77, 218);
+            }
+            .ash:hover{
+            border: 3px solid white;
+            padding:5px 10px ;
+            margin-left: 33cm;
+            }
+            .mint:hover{
+            border: 3px solid white;
+           }
+           .note{
+             background-color:rgba(0,0, 0, 0.5);
+            color: white;
+            margin-top: 60px;
+            font-size: larger;
+            text-align: center;
+            } 
+
+        }
+
+
 
     </style>
 </head>
@@ -178,10 +179,10 @@
              <a href="#" class='nav-link dropdown-toggle' data-bs-toggle="dropdown" style="color:rgb(202, 201, 201);font-weight: bold;">PROJECTS</a>
                 <ul class="dropdown-menu">
                 <li><a href="index.html" class="dropdown-item">WHOGOHOST</a></li>
-                <li><a href="wappalyzer.html">WAPPALYZER</a></li>
-                <li><a href="paypal.html">Paypal</a></li>
-                <li><a href="iconfinder.html">Iconfinder</a></li>
-                <li><a href="goggledom.html">Google Domain</a></li>
+                <li><a href="wappalyzer.html" class="dropdown-item">WAPPALYZER</a></li>
+                <li><a href="paypal.html" class="dropdown-item">Paypal</a></li>
+                <li><a href="iconfinder.html" class="dropdown-item">Iconfinder</a></li>
+                <li><a href="goggledom.html" class="dropdown-item">Google Domain</a></li>
                 </ul>
               <h2 style="font-size: 50px;color:blueviolet;font-weight: bolder;">Sign in</h2>
               <p>You know how a squirel misses it's nut? Yep that's how much we
@@ -196,7 +197,7 @@
                <input type="text" id="inpforemail" placeholder="User name or Email" onInput="emailing()" style="width: 300px;height: 40px;" class="in1"><br><br>
                
                <div class="input-container" style="display: flex;flex-direction: row;">
-                <input type="password" id="inpforpassword" placeholder=" password" onInput="passwording()" style="width: 300px; border-top-right-radius: 0px; border-bottom-right-radius: 0px;   height: 40px; border-right: none;" class="in1" ><br>
+                <input type="password" id="inpforpassword" placeholder=" password" onInput="passwording()" style="width: 330px; border-top-right-radius: 0px; border-bottom-right-radius: 0px;   height: 40px; border-right: none;" class="in1" ><br>
                 <i class="fa-solid fa-eye" style="padding: 2px; text-align: center; color:black;background-color: gray;margin-right: -50px;padding-top: 8px;border-top-right-radius: 5px;border-bottom-right-radius:5px ;"></i>
                 <!--<i class="fa-light fa-eye" style="padding: 2px ; color:black;background-color: gray;margin-left: 0px;"></i>-->
                 </div>
