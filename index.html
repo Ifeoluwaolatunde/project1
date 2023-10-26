@@ -91,10 +91,26 @@
         <li><a href="goggledom.html" class="dropdown-item">Google Domain</a></li>
       </ul>
         <h3 style="font-size: 40px; font-family: sans-serif;font-weight: lighter;">Secure Client Login</h3>
-       <label for="text" style="margin-left: 20px;">Email Address </label><br> <input type="text" placeholder="Enter Email" class="inp"><br>
-       <div style="word-spacing: 200px; color: blue;"><span><label for="password" style="color: black !important;margin-left: 20px;">Password </label></span> <span>Forgot?</span></div></label><br><input type="password" placeholder="Password" class="inp"><br>
+    <form method="GET" action="#" id="fillform" onclick="return(formO())">
+       <label for="text" style="margin-left: 20px;" >Email Address </label><br> 
+       <input type="text" placeholder="Enter Email" class="inp" id="email" onInput="emailval()"><br>
+
+       <span id="Error1"></span>
+
+
+       <div style="word-spacing: 200px; color: blue;"><span>
+
+        <label for="password" style="color: black !important;margin-left: 20px;">Password </label></span>
+        
+         <span>Forgot?</span></div></label><br>
+         <input type="password" placeholder="Password" class="inp" id="password" onInput="passwordval()">
+         <span id="Error2"></span><br>
+
+  
        <div><input type="checkbox" style="margin-left: 20px;" ><label for="checkbox">Remember Me</label></div><br>
-       <button style="color:white;background-color: blue;font-weight: bold;border-radius: 5px;padding: 7px;" class="inp">Login</button>
+       <button type="submit" style="color:white;background-color: blue;font-weight: bold;border-radius: 5px;padding: 7px;"
+        class="inp" id="jare">Login</button>
+    </form>
        <div style="display: flex;flex-direction: row; margin-top: 3px;color: gray;">  <hr style=" width: 160px;margin-left: 0px; height:0px ; margin-right: 3px;"> or  <hr style="font-weight: bolder; width: 160px;margin-left: 3px;height: 0px;"></div>
        <button style=" width:290px;color: white;background-color: rgb(17, 17, 80);padding: 10px; border-radius: 5px;margin-top: 10px;margin-left: 30px;"><i class="fa-brands fa-facebook" ></i> Sign in with Facebook</button>
        <div style="display:flex;flex-direction:row;padding: 20px ;padding-top:10px ;margin-top: 7px;   color: black;border-top: 2px solid rgb(190, 189, 189);
@@ -104,5 +120,140 @@
      padding: 20px;font-weight: bolder;font-size: 20px;color: white;margin-top: 20px;"><p> NOTE:This is a students project and not an attempt to clone existing page</p></div>
    </div>
    </div>
+
+      <script>
+
+    let formO= document.getElementById('fillform');
+    
+    let emailin = document.getElementById('email');
+    let emailerromessage = document.getElementById('Error1');
+    let passwordin = document.getElementById('password');
+    let passworderromessage = document.getElementById('Error2');
+    
+    const emailformat = /^\w+@[a-z]+\.[a-z]{2,3}$/;
+    const passformat= /^(?=.+[!@#$%^&(),.?":{}|<>])(?=.+\d)(?=.+[a-zA-Z]).{8,16}$/;
+
+    let tobi;
+
+    
+    function emailval(){
+        if(!emailin.value){
+          emailerromessage.textContent='email is required' ;
+          tobi=false; 
+        }else if(!emailin.value.match(emailformat)){
+          emailerromessage.textContent=`Email incomplete, please include an'@' and other values`;
+          tobi=false;    
+        }else{
+           emailerromessage.textContent='valid email'; 
+           emailerromessage.style.color='blue';
+        }
+    }
+
+    function passwordval(){
+        if(!passwordin.value){
+          passworderromessage.textContent='password is required' ;
+          passworderromessage.style.color='red'
+          tobi=false; 
+        }else if(!passwordin.value.match(passformat)){
+          passworderromessage.textContent='Please input a valid password which include digit,special character and alphabet';
+          tobi=false;    
+        }else{
+           passworderromessage.textContent=' password is valid '; 
+           passworderromessage.style.color='blue'
+        };
+    }
+
+    
+
+    formO.addEventListener('submit', (ife)=>{
+       ife.preventDefault();
+       tobi=true;
+       
+       emailval();
+       passwordval();
+       
+
+       if(tobi){
+        formO.submit()
+       }
+    })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        // let form =document.getElementById('form');
+        // let email=document.getElementById('in1');
+        // let password=document.getElementById('in2');
+        // let btn=document.getElementById('jare');
+        // let spad= document.getElementById('sap');
+        // let spa=document.getElementById('spaa');
+        // const emailformat = /^\w+@[a-z]+\.[a-z]{2,3}$/;
+        // const passformat= /^(?=.+[!@#$%^&(),.?":{}|<>])(?=.+\d)(?=.+[a-zA-Z]).{8,16}$/;
+
+
+        // let biggy;
+
+        // function email(){
+        //  if (!email.value){
+        //     spad.textContent=`Email is required`;
+        //     span.style.color='red';
+        //     biggy=false;
+            
+        //  }else if(!email.value.match(emailformat)){
+        //     spad.textContent=`Email incomplete, please include an'@' and other values`;
+        //     spad.style.color='red';
+        //     biggy=false;
+        //  }
+        //  else{
+        //    spad.textContent='Valid email';
+        //    spad.style.color='green';
+           
+        //  }
+        // }
+
+        // function password(){
+        //     if(!password.value){
+        //         spa.textContent='Password is required'
+        //         spa.style.color='red'
+        //         biggy=false
+        //     }
+        //     else if(!password.value.match(passformat)){
+        //         spa.textContent='Please input a valid password which include digit,special character and alphabet'
+        //         spa.style.color='red'
+        //         biggy=false
+        //     }
+        //     else{
+        //         spa.textContent='valid password';
+        //         spa.style.color='green';
+                
+
+        //     }
+        // }
+
+        // form.addEventListener('submit',(btn)=>{
+        //   btn.preventDefault();
+        //   biggy=true;
+        //   email();
+        //    password();
+           
+        //    if(biggy){
+        //     form.submit()
+        //    }
+        // })
+
+
+        
+      </script>
 </body>
 </html>

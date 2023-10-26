@@ -8,13 +8,14 @@
     <link rel="stylesheet" href="bootstrap-5.3.1-dist/css/bootstrap.min.css">
     <link rel="icon" href="pixel.jpg">
 
-   <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" 
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" 
     integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" 
     crossorigin="anonymous">
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" 
     integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" 
-    crossorigin="anonymous"></script>-->
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="bootstrap-5.3.1-dist/css/bootstrap.min.css">
     
     <style>
         body{
@@ -41,6 +42,7 @@
             height: 200px;
             box-shadow: inset 0px 0px 5px rgba(225,225, 225, 0.3);
             padding-top: 10px;
+
             
             }
             .int{
@@ -83,9 +85,11 @@
 
         .for2{
             background-color: rgb(158, 94, 218);
-            height: 400px;
+            height: 450px;
             box-shadow: inset 0px 0px 5px rgba(225,225, 225, 0.3);
             padding-top: 20px;
+
+            padding-bottom: 70px;
             
             
             
@@ -96,7 +100,7 @@
             padding: 20px;
             padding-top: 10PX;
             width: 350px;
-            height: 570px;
+            height: 670px;
             border-radius: 10px;
             box-shadow: 0px 0px 5px rgba(0,0, 0, 0.5);
             margin: 0px auto;
@@ -172,36 +176,121 @@
                <h1 style="color: white; font-size: 45px;text-align: center;">pixelgrade</h1>
           <div class="d1">
              <a href="#" class='nav-link dropdown-toggle' data-bs-toggle="dropdown" style="color:rgb(202, 201, 201);font-weight: bold;">PROJECTS</a>
-        <ul class="dropdown-menu">
-         <li><a href="index.html" class="dropdown-item">WHOGOHOST</a></li>
-         <li><a href="wappalyzer.html">WAPPALYZER</a></li>
-         <li><a href="paypal.html">Paypal</a></li>
-         <li><a href="iconfinder.html">Iconfinder</a></li>
-         <li><a href="goggledom.html">Google Domain</a></li>
-        </ul>
+                <ul class="dropdown-menu">
+                <li><a href="index.html" class="dropdown-item">WHOGOHOST</a></li>
+                <li><a href="wappalyzer.html">WAPPALYZER</a></li>
+                <li><a href="paypal.html">Paypal</a></li>
+                <li><a href="iconfinder.html">Iconfinder</a></li>
+                <li><a href="goggledom.html">Google Domain</a></li>
+                </ul>
               <h2 style="font-size: 50px;color:blueviolet;font-weight: bolder;">Sign in</h2>
               <p>You know how a squirel misses it's nut? Yep that's how much we
                missed you.<h3 style="font-weight: bold; font-size: small;">Welcome back</h3>
               </p><br>
              <div class="int">
-               <input type="text" placeholder="User name or Email" style="width: 300px;height: 40px;" class="in1"><br><br>
+              <form action="#" id="biggest" onsubmit=" return( good())">
+                <div style="display: flex;flex-direction: column;">
+                   <span id="foremail" ></span>
+                   <span id="forpass"></span>
+              </div>    
+               <input type="text" id="inpforemail" placeholder="User name or Email" onInput="emailing()" style="width: 300px;height: 40px;" class="in1"><br><br>
+               
                <div class="input-container" style="display: flex;flex-direction: row;">
-                <input type="password" placeholder=" password" style="width: 300px; border-top-right-radius: 0px; border-bottom-right-radius: 0px;   height: 40px; border-right: none;" class="in1" ><br>
+                <input type="password" id="inpforpassword" placeholder=" password" onInput="passwording()" style="width: 300px; border-top-right-radius: 0px; border-bottom-right-radius: 0px;   height: 40px; border-right: none;" class="in1" ><br>
                 <i class="fa-solid fa-eye" style="padding: 2px; text-align: center; color:black;background-color: gray;margin-right: -50px;padding-top: 8px;border-top-right-radius: 5px;border-bottom-right-radius:5px ;"></i>
                 <!--<i class="fa-light fa-eye" style="padding: 2px ; color:black;background-color: gray;margin-left: 0px;"></i>-->
                 </div>
-             </div>
-             <input type="checkbox" style="height: 20px;width: 20px; color: rgb(197, 196, 196);"><label for="checkbox">Stay signed in for longer </label>
-             <div class="mint"  style="background-color: rgb(27, 219, 219);color: white; text-align: center;font-family: sans-serif; padding: 6px; margin: 20px 20px 0px 20px;"><h3 style="font-weight: bolder;font-size: 20px; ">Sign into your account &rightarrow;</h3></div>
+              
+              </div>
+                <input type="checkbox" style="height: 20px;width: 20px; color: rgb(197, 196, 196);"><label for="checkbox">Stay signed in for longer </label>
+
+                <button type="submit" class="mint"  
+                style="background-color: rgb(27, 219, 219);color: white; text-align: center;font-family: sans-serif; padding: 6px; margin: 20px 20px 0px 20px;">
+                <h3 style="font-weight: bolder;font-size: 20px; ">Sign into your account &rightarrow;</h3>
+                </button>
+             </form> 
+
              <div style="display: flex;flex-direction: row;">  <hr style="font-weight: bolder; width: 300px;margin-left: 0px;"> or  <hr style="font-weight: bolder; width: 300px;margin-left: 0px;"></div>
              <div class="sm2" style="display: flex;flex-direction: row;">
              <div class="ash" style="background-color: rgb(219, 218, 218);text-align: center;width: fit-content;margin-left: 30px; padding:10px 20px;color: black;"><h4><i class="fa-solid fa-leaf"></i>continue with Envato</h4></div>
               <div class="ash" style="background-color: rgb(214, 212, 212);text-align: center;width: fit-content; padding: 5px 10px; margin-left: 100px;color: black;"><h4>Create Market</h4></div>
           </div>
-      <p style="margin-top: 10px;margin-left: 20px; color:gray;font-size: 15px;text-align: center;">sign up for free  .  forgot password?</p><br> <br>
-     </div>
+           <p style="margin-top: 10px;margin-left: 20px; color:gray;font-size: 15px;text-align: center;">sign up for free  .  forgot password?</p><br> <br><br><br><br><br><br><br><br>
+       </div>
        <div class="note"> NOTE: This is a student project and not an attempt to clone existing page </div>
     </div>
+    
   </div>
+
+
+
+
+  <script>
+
+   let good= document.getElementById('biggest');
+    
+    let theemail = document.getElementById('inpforemail');
+    let emailcontent = document.getElementById('foremail');
+
+    let thepassword = document.getElementById('inpforpassword');
+    let passcontent = document.getElementById('forpass');
+
+    const emailformat = /^\w+@[a-z]+\.[a-z]{2,3}$/;
+    const passformat= /^(?=.+[!@#$%^&(),.?":{}|<>])(?=.+\d)(?=.+[a-zA-Z]).{8,16}$/;
+
+    let bada;
+
+    
+    
+    function emailing(){
+        if(!theemail.value){
+          emailcontent.textContent='ERRO:The username field is empty.' ;
+          emailcontent .style.backgroundColor='red';
+          emailcontent.style.color='white';
+          emailcontent.style.fontWeight='bolder';
+          emailcontent.style.padding='8px'
+          bada=false; 
+        // }else if(!theemail.value.match(emailformat)){
+        //   emailcontent.textContent='please enter a valid email';
+        //   bada=false;    
+        // }else{
+        //    emailcontent.textContent='valid email'; 
+        //    emailcontent.style.color='blue'
+        }
+    }
+
+    function passwording(){
+        if(!thepassword.value){
+          passcontent.textContent='ERRO: password field is required' ;
+          passcontent .style.backgroundColor='red';
+          passcontent.style.color='white';
+          passcontent.style.fontWeight='bolder';
+          passcontent.style.padding='8px';
+          bada=false; 
+        // }else if(!thepassword.value.match(passformat)){
+        //   passcontent.textContent='password must at least a lower and uppercase letter, a number and special character and shoudl not be less that 8 digit and not more than 16 digit';
+        //   bada=false;    
+        // }else{
+        //    passcontent.textContent='strong password'; 
+        //    passcontent.style.color='blue'
+        }
+    }
+
+    
+
+    good.addEventListener('submit', (ligfht)=>{
+        ligfht.preventDefault();
+       bada=true;
+       
+       emailing();
+       passwording();
+       
+
+       if(tobi){
+        taiwo.submit()
+       }
+    })
+  </script>
+
 </body>
 </html>

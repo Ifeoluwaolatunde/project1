@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes monday{
+            from{
+                padding: 10px;
+                text-align: center;
+                color: gold;
+                background-color: black;
+                border-radius: 10px, 5px;
+            }
+            to{
+                padding: 12px;
+                font-weight: bold;
+                color: palevioletred;
+                background-color: blueviolet;
+                border-radius: 10px,20px;
+            }
+        } 
+        .momo{
+            display: flex;
+            flex-direction: row;
+            animation-name: monday;
+            animation-duration: 4s;
+            animation-timing-function: ease-in-out;
+            animation-delay: 0s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            background-color: black;
+            overflow-x: scroll;
+            width: 700px;
+            padding: 15px;
+            }
+            img{
+                width: 300px;
+            }
+    </style>
+</head>
+<body>
+    <div class="momo">
+        <img src="guide1.PNG" alt="">
+        <img src="guide2.PNG" alt="">
+        <img src="guuide3.PNG" alt="">
+        <img src="guide4.PNG" alt="">
+        <img src="guide5.PNG" alt="">
+        <img src="guide6.PNG" alt="">
+    </div>
+</body>
+</html>
