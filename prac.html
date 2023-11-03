@@ -12,6 +12,7 @@
                 color: gold;
                 background-color: black;
                 border-radius: 10px, 5px;
+                margin-left: 300px;
             }
             to{
                 padding: 12px;
@@ -19,35 +20,43 @@
                 color: palevioletred;
                 background-color: blueviolet;
                 border-radius: 10px,20px;
+                margin-left: 2px;
             }
         } 
         .momo{
             display: flex;
             flex-direction: row;
-            animation-name: monday;
-            animation-duration: 4s;
-            animation-timing-function: ease-in-out;
-            animation-delay: 0s;
-            animation-iteration-count: infinite;
-            animation-direction: alternate;
-            background-color: black;
+            position: sticky;
             overflow-x: scroll;
             width: 700px;
             padding: 15px;
             }
             img{
                 width: 300px;
+                animation-name: monday;
+            animation-duration: 7s;
+            animation-timing-function: ease-in-out;
+            animation-delay: 0s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            background-color: black;
+            }
+            .bobo{
+             display: flex;
+             flex-direction: row;
             }
     </style>
 </head>
 <body>
     <div class="momo">
+       <div class="bobo">
         <img src="guide1.PNG" alt="">
         <img src="guide2.PNG" alt="">
         <img src="guuide3.PNG" alt="">
         <img src="guide4.PNG" alt="">
         <img src="guide5.PNG" alt="">
         <img src="guide6.PNG" alt="">
+       </div> 
     </div>
 </body>
 </html>

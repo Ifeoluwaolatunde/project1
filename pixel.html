@@ -113,7 +113,7 @@
                 color: grey;
                 padding: 15px;
                 width: 350px;
-                height: 600px;
+                height: 650px;
                 justify-content: center;
                 border-radius: 10px;
                 box-shadow: 0px 0px 5px rgba(0,0, 0, 0.5);
@@ -162,7 +162,18 @@
             font-size: larger;
             text-align: center;
             } 
-
+            #foremail{
+                width: 300px;
+            }
+            #forpass{
+                width: 300px;
+            }
+            .bass{
+                width: 300px !important;
+            }
+            .eye{
+                margin-right: 0px !important;
+            }
         }
 
 
@@ -196,9 +207,9 @@
               </div>    
                <input type="text" id="inpforemail" placeholder="User name or Email" onInput="emailing()" style="width: 300px;height: 40px;" class="in1"><br><br>
                
-               <div class="input-container" style="display: flex;flex-direction: row;">
+               <div class="input-container" style="display: flex;flex-direction: row;" class="bass">
                 <input type="password" id="inpforpassword" placeholder=" password" onInput="passwording()" style="width: 330px; border-top-right-radius: 0px; border-bottom-right-radius: 0px;   height: 40px; border-right: none;" class="in1" ><br>
-                <i class="fa-solid fa-eye" style="padding: 2px; text-align: center; color:black;background-color: gray;margin-right: -50px;padding-top: 8px;border-top-right-radius: 5px;border-bottom-right-radius:5px ;"></i>
+                <i class="fa-solid fa-eye" class="eye" style="padding: 2px; text-align: center; color:black;background-color: gray;margin-right: -50px;padding-top: 8px;border-top-right-radius: 5px;border-bottom-right-radius:5px ;"></i>
                 <!--<i class="fa-light fa-eye" style="padding: 2px ; color:black;background-color: gray;margin-left: 0px;"></i>-->
                 </div>
               
@@ -249,7 +260,7 @@
           emailcontent .style.backgroundColor='red';
           emailcontent.style.color='white';
           emailcontent.style.fontWeight='bolder';
-          emailcontent.style.padding='8px'
+          emailcontent.style.padding='4px'
           bada=false; 
         // }else if(!theemail.value.match(emailformat)){
         //   emailcontent.textContent='please enter a valid email';
@@ -266,7 +277,7 @@
           passcontent .style.backgroundColor='red';
           passcontent.style.color='white';
           passcontent.style.fontWeight='bolder';
-          passcontent.style.padding='8px';
+          passcontent.style.padding='4px';
           bada=false; 
         // }else if(!thepassword.value.match(passformat)){
         //   passcontent.textContent='password must at least a lower and uppercase letter, a number and special character and shoudl not be less that 8 digit and not more than 16 digit';

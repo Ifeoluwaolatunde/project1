@@ -4,28 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Codecacademy</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" 
+    crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" 
+    crossorigin="anonymous"></script>
     <link rel="stylesheet" href="bootstrap-5.3.1-dist/css/bootstrap.min.css">
     <style>
         body{
             background-color: rgb(253, 242, 233);
         }
-        .img1{
-            width:400px;
-            height: 400px;
-            margin-left: 200px;
-            box-shadow: -15px 25px 20px 5px black;
+        
             
-        }
+        
         .in1{
             width: 400px;
             height: 50px;
+            
         }
         .both{
             margin-bottom: 50px;
+            display: flex;
+            flex-direction: row;
+            
+            padding: 40px;
+            
         }
-        #OLA{
-            float: left;
+        .gass{
+            margin-right: -170px;
         }
+
+        
         .input{
             background-color:rgb(253, 242, 233) ;
             margin-left: 400px;
@@ -35,7 +46,9 @@
             display: flex;
             flex-direction: row;
             justify-content: space-between;
-            margin-top: 50px;
+            margin-top: 2px;
+            background-color: #10162f;
+            color: white;
         }
         .sta{
             width: 500px;
@@ -76,7 +89,7 @@
             flex-direction: row;
             justify-content: space-between;
             padding: 20px;
-            margin-top: 50px;
+            
         }
         .toward img{
             width: 400px;
@@ -97,7 +110,7 @@
             flex-direction: row;
             padding: 20px;
             color: white;
-            margin-top: 50px;
+            
         }
         .ba{
             
@@ -132,59 +145,315 @@
             display: flex;
             flex-direction: row;
             padding: 30px;
+            
         }
         .saba li{
             list-style-type: none;
         }
+        .saba li:hover{
+            list-style-type: none;
+            color: blue;
+        }
         .basa{
             display: flex;
             flex-direction: row;
+            justify-content: space-between;
         }
         .lass{
             display: flex;
             flex-direction: row;
             border-left: 1px solid black;
         }
+        #carouselExampleSlidesOnly{
+            width: 500px;
+        
+            height: 480px;
+        }
+        .d-block w-100{
+            width: 400%;
+            height: 100%;
+        }
+        .dodo{
+            padding: 30px;
+            padding-bottom: 40px;
+        }
+        .didi{
+            background-color: #10162f;
+            padding: 30px;
+        }
+        .joy{
+            display:none !important;
+        }
+        .accordion{
+            display: none;
+        }
+        .accordion body{
+                display: flex;
+                flex-direction: row;
+                overflow-x: visible;
+                width: 90%;
+            }
+    
+        @media screen and (max-width:768px){
+            .both{
+            margin-bottom: 50px;
+            display: flex;
+            flex-direction:column ;
+
+            }
+            .bayo{
+                padding: 20px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                margin-top: 50px;
+
+            }
+            .bayo img{
+                display: none;
+            }
+            .bash{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                padding: 20px;
+                margin-top: 50px;
+            }
+            .people{
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            justify-content: space-between;
+            margin-top: 50px;
+            }
+            .people img{
+                width: 90%;
+                height: 350px;
+            }
+            .toward{
+            display: flex;
+            flex-direction: column;
+            
+            padding: 20px;
+            
+          }
+          .toward img{
+            width: 90%;
+            height: 400px;
+           }
+           .maca{
+            display: flex;
+            flex-direction: column;
+            background-color: #10162f;
+            margin-top: 0px;
+            width: 100%;
+            }
+            .maca img{
+                width: 90%;
+                height: 400px;
+            }
+            .miss{
+                padding: 20px;
+                text-align: center;
+
+            }
+            .miss h3{
+                font-size: 40px;
+            }
+            .miss p{
+                font-size: 20px;
+            }
+            .baj{
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            color: white;
+            width: 100%;
+            
+            }
+            .ba{
+                
+                margin-right: 10px;
+            }
+            .ba h3{
+            font-size: 30px;
+           }
+           .bash{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            padding: 20px;
+            margin-top: 1px;
+            }
+            .bash h3{
+                font-size: 50px;
+                font-weight: bolder;
+            }
+            .bash p{
+                font-size: 20px;
+            }
+            .cloud{
+                width: 90%;
+                height: 400px;
+                margin-left: 10px;
+            }
+            .dodo{
+                display: none;
+            }
+            .input{
+            background-color:rgb(253, 242, 233) ;
+            margin-left: 10px;
+            margin-top: 20px;
+            width: 90%;
+           }
+           #carouselExampleSlidesOnly{
+            width: 90%;
+        
+            height: 480px;
+           }
+           .gass{
+            margin-right: -0px;
+            }
+            .joy{
+                display:inline-block !important;
+            }
+            .accordion{
+                background-color: #10162f;
+                display: inline-block;
+                
+            }
+            .accordion body{
+              background-color: #10162f;
+                display: flex;
+                flex-direction: row !important;
+                overflow-x: visible !important;
+                width: 90%;
+            }
+            
+            
+            .saba{
+                display: flex;
+                flex-direction: column;
+                width: 99%;
+            }
+            .saba li{
+            list-style-type: none;
+        }
+        .saba li:hover{
+            list-style-type: none;
+            color: blue;
+        }
+            .lass{
+                border-left: 1px solid rgb(253, 242, 233);
+                border-top: 1px solid black;
+                width: 99%;
+            }
+            .jaj{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                font-size: 26px !important;
+            }
+            
+            
+        }
     </style>
 </head>
 <body>
     <div>
-            <div class="both">
-                    <div>
+
+
+
+
+        
+        <nav class="navbar navbar-expand-lg bg-body-rgb(253, 242, 233)" style="color:black;" >
+            <div class="container-fluid">
+             <img src="codelogangan.PNG"  class="png">
+             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#OLA">
+              <span class="navbar-toggler-icon"></span>
+             </button>
+            <div class="collapse navbar-collapse" id="OLA">
+             <ul class="navbar-nav ">
+                        <li class="nav-item joy">
+                            <a href="#"  >
+                                <input type="search" placeholder="search for courses ,article,and docs">
+                            </input></a>
+                            
+                            </li>
+                    <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Catalog</a>
+                    <ul class="dropdown-menu">
                     
-                        <div id="OLA" class="carousel slide" data-bs-ride="carousel">
-                                <div class="carousel indicators">
-                                <button type="button" data-bs-target="#OLA" data-bs-slide-to="0" class="active"></button>
-                                </div>
-                                <div class="carousel indicators">
-                                <button type="button" data-bs-target="#OLA" data-bs-slide-to="1" class="active"></button>
-                                </div>
-                                <div class="carousel indicators">
-                                <button type="button" data-bs-target="#OLA" data-bs-slide-to="2" class="active"></button>
-                                </div>
-                                <div class="carousel-inner">
-                                    <div class="carousel-item active">
-                                        <img src="davido.png" class="d-block w-100" style="width: 100px; height: 100px;">
-                                        <div class="carousel-caption d-none d-md-block">
-                                        <h2>GOOOD DAY MY PEOPLE</h2>
-                                        <p>PLS DO NOT FORGET</p>
-                                        </div>
-                                    </div>
-                                    <div class="carousel-item ">
-                                        <img src="davido.png" class="d-block w-100" style="width: 100px; height: 100px;">
-                                        <div class="carousel-caption d-none d-md-block">
-                                        <h2>GOOOD DAY MY students</h2>
-                                        <p>PLS DO NOT play ur time around</p>
-                                        </div>
-                                    </div>
-                                    <div class="carousel-item ">
-                                        <img src="davido.png" class="d-block w-100" style="width: 100px; height: 100px;">
-                                        <div class="carousel-caption d-none d-md-block">
-                                        <h2>GOOOD DAY MY guys</h2>
-                                        <p>PLS DO NOT play stupid</p>
-                                    </div>
+                    </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" s>Resources</a>
+                        <ul class="dropdown-menu">
+                        
+                        </ul>
+                    </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" >community</a>
+                            <ul class="dropdown-menu">
+                            
+                            </ul>
+                        </li>
+
+                    <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" >Pricing</a>
+                            <ul class="dropdown-menu">
+                            
+                            </ul>
+                            
+                    </li> 
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">For Teams</a>
+                        <ul class="dropdown-menu">
+                        
+                        </ul>
+                    </li>  
+                    <li class="nav-item joy">
+                        <a href="#" class="nav-link "   style="display:flex;flex-direction:row;">
+                        <button style="background-color:blue;color:white;">Sign up</button> <button style="background-color:white;color:blue;">Log in</button>
+                        </a>
+
+                    </li>  
+            
+              
+                <li>
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" >projects</a>
+                    <ul class="dropdown-menu" style="background-color:white;color: #000;font-size: 20px;text-decoration: underline;">
+                    <li><a href="index.html" class="dropdown-item"><h5>WHOGOHOST</h5></a></li>
+                    <li><a href="pixel.html" class="dropdown-item"><h5>PIXELGRADE</h5></a></li>
+                    <li><a href="paypal.html" class="dropdown-item"><h5>PAYPAL</h5></a></li>
+                    <li><a href="goggledom.html" class="dropdown-item"><h5>GOOGLE DOMAIN</h5></a></li>
+                    <li><a href="iconfinder.html" class="dropdown-item"><h5>ICONFINDER</h5></a></li>
+                    <li><a href="Wappalyser.html" class="dropdown-item"><h5>WAPPALYZER</h5></a></li>
+                    
+                    </ul>
+                </li>
+
+            </ul>
+        </nav>
+
+
+            <div class="both">
+                    <div class="gass">
+                    
+                        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner" style="height: 100%;">
+                              <div class="carousel-item active" style="height: 100%;" data-bs-interval="3000">
+                                <img src="caro1.PNG" class="d-block w-100" alt="...">
+                              </div>
+                              <div class="carousel-item" style="height: 100%;" data-bs-interval="3000">
+                                <img src="caro2.png" class="d-block w-100" alt="..." >
+                              </div>
+                              <div class="carousel-item" style="height: 100%;" data-bs-interval="3000">
+                                <img src="caro3.png" class="d-block w-100" alt="...">
+                              </div>
                             </div>
-                        </div>
+                          </div>
+                        
 
 
 
@@ -193,24 +462,256 @@
 
                     <div class="input">
                         <h2>join the millions learning to code<br> with codecacademy for free</h2> 
-
-                        <label for="text">Email</label><br>  <input type="text" class="in1"><br>
-                        <label for="password">password</label><br> <input type="password" class="in1"><br><br>
-                        <input type="submit" class="in1" style="background-color:rgb(54, 54, 230);">
+                       <form action="" id="fillform" onclick="return(formO())">
+                        <label for="text" id="email" onIput="emailval()">Email</label><br>  <input type="text" class="in1"><br>
+                        <span id="Error1"></span>
+                        <br>
+                        <label for="password"  id="password"  onInput="passwordval()">password</label><br> <input type="password" class="in1">
+                        <br>
+                        <span id="Error2"></span><br>
+                        <input type="submit"  class="in1"  style="background-color:rgb(54, 54, 230);"><br>
+                        
+                        <br>
                         <p>By signing up for Codecademy, you agree to Codecademy's <br> <a href="#">Terms of Service</a> & <a href="#">Privacy Policy.</a></p>
                         <h4>Or sign up using:</h4>
-
+                      </form>
                     </div>
             </div>
-            <div style="background-color: #10162f;margin-top: 150px;">
-                <h5> Start Learning</h5>
-                    <h3>  Popular Courses</h3>
+            
+                <div style="background-color: #10162f;color: white;text-align: center;" class="dodo">
+                    <h5 style="font-weight: bold;"> Start Learning</h5>
+                    <h3 style="font-size: 40px;font-weight: bold;">  Popular Courses</h3>
 
-            </div>
-                <div style="background-color: #10162f;color: white;">
                     <div>
+                        <ul class="nav nav-tabs" id="myTab" role="tablist" style="width: fit-content; margin: 0px auto;">
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Home</button>
+                            </li>
 
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Profile</button>
+                            </li>
+
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Contact</button>
+                            </li>
+
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="contact-tab1" data-bs-toggle="tab" data-bs-target="#contact1-tab-pane" type="button" role="tab" aria-controls="contact1-tab-pane" aria-selected="false">Contact</button>
+                              </li>
+
+                              <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="contact-tab2" data-bs-toggle="tab" data-bs-target="#contact2-tab-pane" type="button" role="tab" aria-controls="contact2-tab-pane" aria-selected="false">Contact</button>
+                              </li>
+
+                              <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="contact-tab3" data-bs-toggle="tab" data-bs-target="#contact3-tab-pane" type="button" role="tab" aria-controls="contact3e-tab-pane" aria-selected="false">Contact</button>
+                              </li>
+                            
+
+                   <div class="didi">           
+                        </ul >
+                          <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active"   id="home-tab-pane"    style="display: flex;flex-direction: row;width: fit-content; margin: 0px auto;justify-content: space-between;background-color: #10162f;position:absolute" role="tabpanel" aria-labelledby="home-tab" tabindex="0">.
+                                <img src="freecourse1.PNG" alt=""><img src="freecourse2.PNG" alt=""><img src="freecourse3.PNG" alt=""><img src="freecourse4.PNG" alt="">
+                            </div>
+
+                            <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" style="display: flex;flex-direction: row;width: fit-content; margin: 0px auto; justify-content: space-between;background-color: #10162f;position: absolute;" aria-labelledby="profile-tab" tabindex="0">
+                                <img src="freecourse5.PNG" alt=""><img src="freecourse6.PNG" alt=""><img src="freecourse7.PNG" alt=""><img src="freecourse8.PNG" alt="">
+
+                            </div>
+                            
+                            <div class="tab-pane fade"     style="display: flex;flex-direction: row;width: fit-content; margin: 0px auto; justify-content: space-between;background-color: #10162f;position: absolute;"    id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+                                <img src="freecourse9.PNG" alt=""><img src="freecourse10.PNG" alt=""><img src="freecourse11.PNG" alt=""><img src="freecourse12.PNG" alt="">
+                            </div>
+                           
+                            <div class="tab-pane fade" id="contact1-tab-pane" role="tabpanel"   style="display: flex;flex-direction: row;width: fit-content; margin: 0px auto; justify-content: space-between;background-color: #10162f;position: absolute;"   aria-labelledby="contact1-tab" tabindex="0">
+                                <img src="freecourse2.PNG" alt=""><img src="freecourse6.PNG" alt=""><img src="freecourse9.PNG" alt=""><img src="freecourse4.PNG" alt="">
+                            </div>
+                            
+                            <div class="tab-pane fade"    style="display: flex;flex-direction: row;width: fit-content; margin: 0px auto; justify-content: space-between;background-color: #10162f; margin-top: 5px; position: absolute;"  id="contact2-tab-pane" role="tabpanel" aria-labelledby="contact2-tab" tabindex="0">
+                                <img src="freecourse11.PNG" alt=""><img src="freecourse2.PNG" alt=""><img src="freecourse9.PNG" alt=""><img src="freecourse10.PNG" alt="">
+                            </div>
+                            
+                            <div class="tab-pane fade"   style="display: flex;flex-direction: row;width: fit-content; margin: 0px auto; justify-content: space-between;background-color: #10162f;margin-top: 10px;"  id="contact3-tab-pane" role="tabpanel" aria-labelledby="contact3-tab" tabindex="0">
+                                <img src="freecourse8.PNG" alt=""><img src="freecourse6.PNG" alt=""><img src="freecourse7.PNG" alt=""><img src="freecourse5.PNG" alt="">
+                            </div>
+                           
+                          </div>
                     </div>
+                </div>
+                            
+
+
+
+
+
+                                               <!---  <div class="accordion" id="parentdiv">
+                                            
+                                                            <div class="accordion-item">
+                                                                <h2 class="accordion-header">
+                                                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#first" style="background:black ;color: white;font-size: 20px;font-weight: bold;"> 
+                                                                        Differences between JAVA and JAVASCRIPT
+                                                                        </button>
+                                                                </h2>
+                                                                <div class="accordion-collapse collapse" id="first" data-bs-parent="#parentdiv">
+                                                                    <div class="accordion-body"  id="ja">
+                                                                        <div>
+                                                                            
+                                                                            <img src="freecourse1.PNG" alt=""><img src="freecourse2.PNG" alt=""><img src="freecourse3.PNG" alt=""><img src="freecourse4.PNG" alt="">
+                                                                        
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>    
+                                                                <div class="accordion-item">
+                                                                    <h2 class="accordion-header">
+                                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#eight" style="background:black ;color: white;font-size: 20px;font-weight: bold;">Quiz</button>
+                                                                    </h2>
+                                                                    <div class="accordion-collapse collapse" id="eight" data-bs-parent="#parentdiv">
+                                                                    <div class="accordion-body"  >
+                                                                        <img src="freecourse5.PNG" alt=""><img src="freecourse6.PNG" alt=""><img src="freecourse7.PNG" alt=""><img src="freecourse8.PNG" alt="">
+
+                                                                    </div>
+                                                        
+                                                                </div>
+                                                                
+                                                                <div class="accordion-item">
+                                                                    <h2 class="accordion-header">
+                                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#eight" style="background:black ;color: white;font-size: 20px;font-weight: bold;">Quiz</button>
+                                                                    </h2>
+                                                                    <div class="accordion-collapse collapse" id="eight" data-bs-parent="#parentdiv">
+                                                                    <div class="accordion-body"  >
+                                                                        <img src="freecourse9.PNG" alt=""><img src="freecourse10.PNG" alt=""><img src="freecourse11.PNG" alt=""><img src="freecourse12.PNG" alt="">
+                                                                    
+                                                                    </div>
+                                                        
+                                                                </div>
+                                                                
+                                                                <div class="accordion-item">
+                                                                    <h2 class="accordion-header">
+                                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#eight" style="background:black ;color: white;font-size: 20px;font-weight: bold;">Quiz</button>
+                                                                    </h2>
+                                                                    <div class="accordion-collapse collapse" id="eight" data-bs-parent="#parentdiv">
+                                                                    <div class="accordion-body"  >
+                                                                        <img src="freecourse2.PNG" alt=""><img src="freecourse6.PNG" alt=""><img src="freecourse9.PNG" alt=""><img src="freecourse4.PNG" alt="">
+                                                                    
+                                                                    </div>
+                                                        
+                                                                </div>
+                                                                
+
+                                                                <div class="accordion-item">
+                                                                    <h2 class="accordion-header">
+                                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#eight" style="background:black ;color: white;font-size: 20px;font-weight: bold;">Quiz</button>
+                                                                    </h2>
+                                                                    <div class="accordion-collapse collapse" id="eight" data-bs-parent="#parentdiv">
+                                                                    <div class="accordion-body"  >
+                                                                        <img src="freecourse11.PNG" alt=""><img src="freecourse2.PNG" alt=""><img src="freecourse9.PNG" alt=""><img src="freecourse10.PNG" alt="">
+                                                                    
+                                                                    </div>
+                                                        
+                                                                </div>
+                                                                
+
+                                                                <div class="accordion-item">
+                                                                    <h2 class="accordion-header">
+                                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#eight" style="background:black ;color: white;font-size: 20px;font-weight: bold;">Quiz</button>
+                                                                    </h2>
+                                                                    <div class="accordion-collapse collapse" id="eight" data-bs-parent="#parentdiv">
+                                                                      <div class="accordion-body"  >
+                                                                        <img src="freecourse8.PNG" alt=""><img src="freecourse6.PNG" alt=""><img src="freecourse7.PNG" alt=""><img src="freecourse5.PNG">
+                                                                      </div>
+                                                                    </div>
+                                                                </div>
+                                                        
+                                                                
+                                                    
+                                                  </div>-->
+
+
+
+                                                      
+
+
+                                                  <div class="accordion" id="accordionExample">
+                                                    <div class="accordion-item active">
+                                                      <h2 class="accordion-header">
+                                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="background:black ;color: white;font-size: 20px;font-weight: bold;">
+                                                          Accordion Item #1
+                                                        </button>
+                                                      </h2>
+                                                      <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                                                        <div class="accordion-body" style="display: flex;flex-direction: row;overflow-x: hidden;background-color: #10162f;">
+                                                            <img src="freecourse1.PNG" alt=""><img src="freecourse2.PNG" alt=""> 
+                                                        </div>                
+                                                      </div>
+                                                    </div>
+                                                    <div class="accordion-item">
+                                                      <h2 class="accordion-header">
+                                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" style="background:black ;color: white;font-size: 20px;font-weight: bold;">
+                                                          Accordion Item #2
+                                                        </button>
+                                                      </h2>
+                                                      <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                                        <div class="accordion-body" style="display: flex;flex-direction: row;background-color: #10162f;">
+                                                            <img src="freecourse5.PNG" alt=""><img src="freecourse6.PNG" alt="">
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                    <div class="accordion-item">
+                                                      <h2 class="accordion-header">
+                                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" style="background:black ;color: white;font-size: 20px;font-weight: bold;">
+                                                          Accordion Item #3
+                                                        </button>
+                                                      </h2>
+                                                      <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                                        <div class="accordion-body" style="display: flex;flex-direction: row;background-color: #10162f;">
+                                                            <img src="freecourse9.PNG" alt=""><img src="freecourse10.PNG" alt="">
+                                                        </div>            
+                                                      </div>
+                                                    </div>
+                                                    <div class="accordion-item">
+                                                        <h2 class="accordion-header">
+                                                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapsefour" style="background:black ;color: white;font-size: 20px;font-weight: bold;">
+                                                            Accordion Item #4
+                                                          </button>
+                                                        </h2>
+                                                        <div id="collapsefour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                                          <div class="accordion-body" style="display: flex;flex-direction: row;border:#10162f ;">
+                                                            <img src="freecourse2.PNG" alt=""><img src="freecourse6.PNG" alt="">
+                                                           </div>         
+                                                        </div>
+                                                      </div>
+                                                      <div class="accordion-item">
+                                                        <h2 class="accordion-header">
+                                                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapsefive" style="background:black ;color: white;font-size: 20px;font-weight: bold;">
+                                                            Accordion Item #5
+                                                          </button>
+                                                        </h2>
+                                                        <div id="collapsefive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                                          <div class="accordion-body" style="display: flex;flex-direction: row;background-color: #10162f;">
+                                                            <img src="freecourse11.PNG" alt=""><img src="freecourse2.PNG" alt="">
+                                                          </div>          
+                                                        </div>
+                                                      </div>
+                                                      <div class="accordion-item">
+                                                        <h2 class="accordion-header">
+                                                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsesix" aria-expanded="false" aria-controls="collapseThree" style="background:black ;color: white;font-size: 20px;font-weight: bold;">
+                                                            Accordion Item #6
+                                                          </button>
+                                                        </h2>
+                                                        <div id="collapsesix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                                          <div class="accordion-body" style="display: flex;flex-direction: row;background-color: #10162f;">
+                                                            <img src="freecourse8.PNG" alt=""><img src="freecourse6.PNG" alt="">
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                  </div>
+
+
+
+
 
                     <div class="bayo">
                         <div>
@@ -227,7 +728,7 @@
                         </div>
                     </div>    
             
-                </div>
+                    
                     <div style="background-color: #FFD300;" class="bash">
                         <div>
                             <h3>Not sure where to start?</h3>
@@ -247,16 +748,16 @@
                         <div class="people">
                             <div>
                                 <img src="cristian.png" >
-                                <p>Technical Analyst to <br>Front-End Engineer in 6 <br>Months</p>
+                                <h4>Technical Analyst to <br>Front-End Engineer in 6 <br>Months</h4>
                                 <h5>Cristian T.,Front End <br> Engineer @ Grid Dynamics, <br>
                                 Guadalajara </h5>
                             </div>
 
                             <div>
                                 <img src="freelancer.png" >
-                                <p>
-                                    Freelancer to Developing Apps <br>for NASA
-                                </p>
+                                <h4>
+                                    Freelancer to Developing <br>Apps for NASA
+                                </h4>
                                 <h5>De'Shaun B.,Associate <br> Software Engineer, Winter Park</h5>
                             </div>
                             <div>
@@ -274,7 +775,7 @@
                     </div>
                     <div style="background-color: #3A10E5;" class="baj">
                         <div class="ba"><h2 style="font-size: 50px;font-weight: bolder;">Join in on Something big</h2></div>
-                        <div style="font-size: 30px;font-weight: bolder;">
+                        <div style="font-size: 30px;font-weight: bolder;" class="jaj">
                             <P>50M Learners</P>
                             <p>190+ Countries</p>
                             <p>3.7B codesubmits</p>
@@ -285,7 +786,7 @@
 
                             <h3>Level up your team's skills</h3>
                             <h5>Give your team the knowledge , experience, and confidence the need to tackle any problem <br>
-                            <button style="background-color: #FFD300;color: #10162f;"><h4>Explore business plan</h4></button>
+                            <button style="background-color: #FFD300;color: #10162f;"><h5>Explore business plan</h5></button>
                             </h5>
                         </div>
                         <div><img src="honeycomb.png"></div>
@@ -305,10 +806,11 @@
                         <div class="basa">
                             <div>
                                 <ul>
-                                    <li>About</li>
+                                    <li><strong>About</strong> </li>
                                     <li>career</li>
                                     <li>Afiliative</li>
-                                    <li></li>
+                                    <li>Fieldset</li>
+                                    <li> Fidelity</li>
                                     
                                 </ul>
                             </div>
@@ -378,9 +880,115 @@
                                     
                                 </ul>
                             </div>
+
+                            <div>
+                                <ul>
+                                    <li><strong>Languages</strong></li>
+                                    <li>Bash</li>
+                                    <li>C</li>
+                                    <li>C++</li>
+                                    <li>C#</li>
+                                    <li>Go</li>
+                                    <li>HTML& CSS</li>
+                                    <li>Java</li>
+                                    <li>JavaScript</li>
+                                    <li>Kotlin</li>
+                                    <li>PHP</li>
+                                    <li>Python</li>
+                                    <li>R</li>
+                                    <li>Ruby</li>
+                                    <li>SQL</li>
+                                    <li>Swift</li>
+                                    
+                                </ul>
+                            </div>
+                            <div>
+                                <ul>
+                                    <li><strong>Career Building</strong></li>
+                                    <li>Career path</li>
+                                    <li>Career services</li>
+                                    <li>interview- prep</li>
+                                    <li>Professional certification</li>
+                                    <li>-</li>
+                                    <li>Full catalog</li>
+                                    <li>Beta content</li>
+                                    <li>Roadmap</li>
+                                    <li>Mobile</li>
+                                    <li><img src="codeapp.PNG" alt=""></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    
+                                </ul>
+                            </div>
                         </div>
                     </div>
+
+                    <img src="codeend.PNG" alt="">
+                    <div style="background-color: black;color: white;padding: 7px;text-align: center;">NOTE:This is a student's project and not an attempt to clone exsiting page</div>
    </div>
+   <script>
+
+
+let formO= document.getElementById('fillform');
+    
+    let emailin = document.getElementById('email');
+    let emailerromessage = document.getElementById('Error1');
+    let passwordin = document.getElementById('password');
+    let passworderromessage = document.getElementById('Error2');
+    
+    const emailformat = /^\w+@[a-z]+\.[a-z]{2,3}$/;
+    const passformat= /^(?=.+[!@#$%^&(),.?":{}|<>])(?=.+\d)(?=.+[a-zA-Z]).{8,16}$/;
+
+    let tobi;
+
+    
+    function emailval(){
+        if(!emailin.value){
+          emailerromessage.textContent='email is required' ;
+          emailerromessage.style.color='red'
+          tobi=false; 
+        }else if(!emailin.value.match(emailformat)){
+          emailerromessage.textContent=`Email incomplete, please include an'@' and other values`;
+          tobi=false;    
+        }else{
+           emailerromessage.textContent='valid email'; 
+           emailerromessage.style.color='blue';
+        }
+    }
+
+    function passwordval(){
+        if(!passwordin.value){
+          passworderromessage.textContent='password is required' ;
+          passworderromessage.style.color='red'
+          tobi=false; 
+        }else if(!passwordin.value.match(passformat)){
+          passworderromessage.textContent='Please input a valid password which include digit,special character and alphabet';
+          tobi=false;    
+        }else{
+           passworderromessage.textContent=' password is valid '; 
+           passworderromessage.style.color='blue'
+        };
+    }
+
+    
+
+    formO.addEventListener('submit', (ife)=>{
+       ife.preventDefault();
+       tobi=true;
+       
+       emailval();
+       passwordval();
+       
+
+       if(tobi){
+        formO.submit()
+       }
+    })
+
+   </script>
   
 </body>
 </html>

@@ -21,7 +21,7 @@
             margin-top: 100px;
         }
         .a{
-            font-size:30px;
+            font-size:40px;
             font-weight: lighter;
         }
         .b{
@@ -206,6 +206,47 @@
             .qaqa{
                 display: inline-block;
             }
+            .lady{
+                display: none !important;
+            }
+            @keyframes monday{
+            from{
+                padding: 10px;
+                text-align: center;
+                
+                border-radius: 10px, 5px;
+                margin-left: 300px;
+            }
+            to{
+                padding: 12px;
+                font-weight: bold;
+                
+                border-radius: 10px,20px;
+                margin-left: 2px;
+            }
+        } 
+        .momo{
+            display: flex;
+            flex-direction: row;
+            position: sticky;
+            overflow-x: scroll;
+            width: 95%;
+            padding: 30px;
+            }
+            .b{
+                width: 300px;
+                animation-name: monday;
+            animation-duration: 10s;
+            animation-timing-function: ease-in-out;
+            animation-delay: 0s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            
+            }
+            .bobo{
+             display: flex;
+             flex-direction: row;
+            }
         @media screen and (max-width: 768px){
             .rain{
             display: flex;
@@ -217,7 +258,7 @@
             }
             .green{
             background-color: rgb(191, 233, 191);
-            width: 400px;
+            width: 98%;
             padding: 15px;
             margin-right: 20px;
             height: 530px;
@@ -226,14 +267,14 @@
                 }
                 .blue{
                     background-color: rgb(174, 215, 230);
-                    width: 400px;
+                    width: 98%;
                     padding: 10px;
                     height: 570px;
                     border-radius: 10px;
                 } 
                 .pink{
                     background-color: rgb(250, 177, 177);
-                    width: 400px;
+                    width: 98%;
                     padding: 15px;
                     margin-right: 20px;
                     height: 530px;
@@ -291,37 +332,53 @@
             display: flex;
             flex-direction: column;
           }
+          .images{
+            display: none;
+          }
+          .lady{
+            display: inline-block;
+          }
           @keyframes monday{
             from{
-                padding: 20px;
+                padding: 10px;
                 text-align: center;
-                width: 600px;
-                height: 400px;
+                
+                
                 border-radius: 10px, 5px;
+                margin-left: 300px;
             }
             to{
-                padding: 20px;
+                padding: 12px;
                 font-weight: bold;
-                width: 600px;
-                height: 400px;
+                
                 border-radius: 10px,20px;
+                margin-left: 2px;
             }
-         } 
-          .momo{
+           } 
+            .momo{
             display: flex;
             flex-direction: row;
-            animation-name: monday;
-            animation-duration: 4s;
+            position: sticky;
+            overflow-x: scroll;
+            width: 95%;
+            padding: 30px;
+
+            }
+            .b{
+                width: 300px;
+                animation-name: monday;
+            animation-duration: 10s;
             animation-timing-function: ease-in-out;
             animation-delay: 0s;
             animation-iteration-count: infinite;
             animation-direction: alternate;
-        
-            overflow-x: scroll;
-            width: 400px;
-            height: 400px;
-            padding: 20px;
-          }
+            
+            }
+            .bobo{
+             display: flex;
+             flex-direction: row;
+            }
+          
 
         }
      </style>
@@ -330,7 +387,7 @@
   <div>
          <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid" style="color: rgb(85, 85, 85);position: fixed;top: 0px;background-color: white;" class="collapse navbar-collapse">
-                <a class="navbar-brand" href="#"><img src="sim.PNG" style="width: 30px;height: 30px;" ></a>
+                <a class="navbar-brand" href="#"><img src="sim.PNG" style="width: 70px;height: 70px;" ></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#OLA" aria-controls="navbarSupportedContent">
                     <span class="navbar-toggler-icon"></span>
                   </button>
@@ -355,13 +412,17 @@
             <h1 class="pade">Engineering the next<br>best thing for<br> <strong style="color: rgb(219, 73, 73);"> the digital world</strong></h1>
             <p>Agile in mind, spirit and speed</p>
             <button class="bon">Scale your dream team</button>
-         </div><br><br>
+         </div><br><br><br><br>
          <div>
             <h1 class="a">World-class agile product team to scale your Business</h1>
          </div>
          <br><br>
+         <span style="display: flex;flex-direction: column;width: 98%;" class="lady">
+            <img src="lady.png" alt="">
+            <img src="lady2.png" alt="">
+         </span>
 
-         <div class="momo">
+       <!--  <div class="momo">
 
             <div style="text-align: center;border: 1px solid rgb(1, 172, 1,0.5);margin-right: 20px;padding: 15px;width: 300px;" class="b">
                 <h4>Digital products engineering</h4>
@@ -379,7 +440,27 @@
                 <h4>Digital products engineering</h4>
                 Solve your unique business<br> problems by building impactful<br> software products.
 
-            </div>
+            </div>-->
+            <div class="momo">
+                <div class="bobo">
+                    <div  style="text-align: center;border: 1px solid rgb(1, 172, 1,0.5);margin-right: 5px;padding: 15px;width: 300px;" class="b">
+                        <h4>Digital products engineering</h4>
+                        Solve your unique business<br> problems by building impactful<br> software products.
+                    </div>
+                    <div style="text-align: center;border: 1px solid rgb(1, 172, 1,0.5);margin-right: 5px;padding: 15px;width: 300px;" class="b">
+                            <h4>Digital products engineering</h4>
+                            Solve your unique business<br> problems by building impactful<br> software products.
+                    </div>
+                    <div style="text-align: center;border: 1px solid rgb(1, 172, 1,0.5);margin-right: 5px;padding: 15px;width: 300px;" class="b">
+                        <h4>Digital products engineering</h4>
+                        Solve your unique business<br> problems by building impactful<br> software products.
+                    </div>
+                    <div style="text-align: center;border: 1px solid rgb(1, 172, 1,0.5);margin-right: 5px;padding: 15px;width: 300px;" class="b">
+                        <h4>Digital products engineering</h4>
+                        Solve your unique business<br> problems by building impactful<br> software products.
+        
+                </div> 
+             </div>
 
 
 
@@ -482,16 +563,17 @@
              <div class="sama">
                <h2>people</h2>
               <div class="masa">
-                <iframe src="video4.mp4" frameborder="0"></iframe>
-                <iframe src="video1.mp4" frameborder="0"></iframe>
-                <iframe src="video1.mp4" frameborder="0"></iframe>
+
+                <div class="fra" >  <iframe src="video4.mp4" frameborder="0"></iframe></div>
+                <div class="fra">  <iframe src="video1.mp4" frameborder="0"></iframe></div>
+                <div class="fra">  <iframe src="video1.mp4" frameborder="0"></iframe></div>
               </div><br>
               <div></div>
               <br>
               <div class="masa">
-                <iframe src="video1.mp4" frameborder="0"></iframe>
-                <iframe src="video4.mp4" frameborder="0"></iframe>
-                <iframe src="video1.mp4" frameborder="0"></iframe>
+              <div class="fra"><iframe src="video1.mp4" frameborder="0"></iframe></div>
+              <div class="fra"><iframe src="video4.mp4" frameborder="0"></iframe></div>
+               <div class="fra"> <iframe src="video1.mp4" frameborder="0"></iframe></div>
               </div>
 
              </div>
