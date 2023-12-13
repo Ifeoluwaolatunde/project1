@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simform</title>
     <link rel="stylesheet" href="bootstrap-5.3.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap-5.3.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" 
     rel="stylesheet" 
     integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" 
@@ -15,6 +17,7 @@
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" 
      integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" 
      crossorigin="anonymous"></script>
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
 
      <style>
         .saq{
@@ -22,11 +25,16 @@
         }
         .a{
             font-size:40px;
-            font-weight: lighter;
+            font-weight: bolder;
+            padding-left: 20px;
         }
         .b{
             width: 150px;
             height: 200px;
+        }
+        .c{
+            width: 150px;
+            height: 170px; 
         }
         .bad{
             display: flex;
@@ -51,6 +59,7 @@
         .sasa{
             display: flex;
             flex-direction: row;
+            padding: 25px;
             
         }
         .images{
@@ -115,10 +124,11 @@
         .masa{
             display: flex;
            flex-direction: row; 
+           width: 90px;
         }
         .masa iframe{
-            width: 300px;
-            height: 200px;
+            width: 350px;
+            height: 300px;
             margin-right: 15px;
         }
         .sama{
@@ -151,6 +161,9 @@
             height: 500px;
             border-radius: 10px;
         }
+        .green:hover{
+            margin-left: 5px;
+        }
         .blue{
             background-color: rgb(174, 215, 230);
             width: 570px;
@@ -158,6 +171,9 @@
             height: 500px;
             border-radius: 10px;
         } 
+        .blue:hover{
+            margin-left: 5px;
+        }
         .pink{
             background-color:  rgb(250, 177, 177);
             width: 570px;
@@ -166,6 +182,10 @@
             height: 500px;
             border-radius: 10px;
         }
+        .pink:hover{
+            margin-left: 5px;
+        }
+
         .peru{
             background-color: rgb(255, 225, 196);
             width: 570px;
@@ -173,6 +193,9 @@
             height: 500px;
             border-radius: 10px;
         } 
+        .peru:hover{
+            margin-left: 5px;
+        }
         .salam{
             visibility: hidden;
         }
@@ -193,10 +216,12 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+            padding: 20px;
             
         }
         .awa{
-            pad: 30px;
+            width: 90%;
+            margin-left: 30px;
         }
          .leba{
                 display: flex;
@@ -209,13 +234,16 @@
             .lady{
                 display: none !important;
             }
+            swell{
+                display: inline-block;
+            }
             @keyframes monday{
             from{
                 padding: 10px;
                 text-align: center;
                 
                 border-radius: 10px, 5px;
-                margin-left: 300px;
+                margin-left: 100px;
             }
             to{
                 padding: 12px;
@@ -233,21 +261,81 @@
             width: 95%;
             padding: 30px;
             }
-            .b{
+           /* .b{
                 width: 300px;
                 animation-name: monday;
-            animation-duration: 10s;
+            animation-duration: 5s;
             animation-timing-function: ease-in-out;
             animation-delay: 0s;
             animation-iteration-count: infinite;
             animation-direction: alternate;
             
-            }
+            }*/
             .bobo{
              display: flex;
              flex-direction: row;
             }
+            .sall{
+                padding-top: 200px;
+            }
+            .line{
+                display: inline-block;
+            }
+            .bine{
+                display: none;
+            }
+            .bubu{
+                border: none;
+                 padding: 10px;
+                 border-radius: 5px; 
+                 background-color: #EF5366;
+                 color: rgb(255, 255, 255);
+                            
+            }
+            .bubu:hover{
+                background-color: white;
+                color: #EF5366;
+                border-radius: 5px;
+                border:1px inset gray;
+                 padding: 10px;
+            }
+            .dill{
+                text-align: center; 
+              background-color: white;
+              color: #EF5366;
+              padding: 10px;
+              font-size: 20px;
+              font-weight: bold;
+            }
+            .dill:hover{
+                text-align: center; 
+                background-color: red; 
+                color: white;
+                padding: 10px;
+                font-weight: bold;
+                font-size: 20px;
+            }
+            #bally{
+                display: flex;
+                flex-direction: row;
+            }
+            #bally li:hover{
+                color: red;
+            }
+            .bally{
+                display: flex;
+                flex-direction: column;
+            }
+            .flash{
+                display: inline-block;
+            }
+            .fash{
+                display: none;
+            }
         @media screen and (max-width: 768px){
+            .sall{
+                padding-top: 0px;
+            }
             .rain{
             display: flex;
             flex-direction: column;
@@ -261,38 +349,55 @@
             width: 98%;
             padding: 15px;
             margin-right: 20px;
-            height: 530px;
+            height: fit-content;
             border-radius: 10px;
             margin-bottom: 15px;
+            padding-bottom: 5px;
+                }
+                .green:hover{
+                    margin-left: 5px;
                 }
                 .blue{
                     background-color: rgb(174, 215, 230);
-                    width: 98%;
+                    width: 100%;
                     padding: 10px;
-                    height: 570px;
+                    height: fit-content;
                     border-radius: 10px;
+                    padding-bottom: 5px;
                 } 
+                .blue:hover{
+                    margin-left: 5px;
+                }
+
                 .pink{
                     background-color: rgb(250, 177, 177);
-                    width: 98%;
+                    width: 100%;
                     padding: 15px;
                     margin-right: 20px;
-                    height: 530px;
+                    height:fit-content;
                     border-radius: 10px;
                     margin-bottom: 15px;
+                    padding-bottom: 5px;
+                }
+                .pink:hover{
+                    margin-left: 5px;
                 }
                 .peru{
                     background-color: rgb(255, 225, 196);
-                    width: 400px;
+                    width: 100%;
                     padding: 10px;
-                    height: 570px;
+                    height: fit-content;
                     border-radius: 10px;
+                    padding-bottom: 5px;
                 } 
+                .peru:hover{
+                    margin-left: 5px;
+                }
                 .sac{
             display: flex;
             flex-direction: column;
             text-align: center;
-            padding: 60px;
+            padding: 5x;
            }
             .bale{
                 display: flex;
@@ -316,10 +421,14 @@
             .sasa{
             display: flex;
             flex-direction: row;
+            width: 90px;
             
           }
           .awa{
             display: none;
+          }
+          .a{
+            font-size: 30px;
           }
           .qaqa{
             display: none;
@@ -364,7 +473,7 @@
             padding: 30px;
 
             }
-            .b{
+           /* .b{
                 width: 300px;
                 animation-name: monday;
             animation-duration: 10s;
@@ -373,13 +482,64 @@
             animation-iteration-count: infinite;
             animation-direction: alternate;
             
-            }
+            }*/
             .bobo{
              display: flex;
              flex-direction: row;
             }
-          
-
+            .fra{
+                width: 80%;
+                height: 300px;
+                margin-bottom: 5px;
+            }
+            
+            .msag{
+                width: 80%;
+            }
+            .swell{
+                display: none;
+            }
+            .line{
+                display: none;
+            }
+            .bine{
+                display: inline-block;
+            }
+            .dill:hover{
+              background-color: white;
+              color: #EF5366;
+              padding: 10px;
+              font-size: 20px;
+              font-weight: bold;
+            }
+            .dill{
+                text-align: center; 
+                background-color: red; 
+                color: white;
+                padding: 10px;
+                font-weight: bold;
+                font-size: 20px;
+            }
+            #bally{
+                display: flex;
+                flex-direction: column;
+            }
+            #bally li:hover{
+                color: red;
+            }
+            #bally li{
+                list-style-type: none;
+            }
+            .bally{
+                display: flex;
+                flex-direction: row;
+            }
+            .flash{
+                display: none;
+            }
+            .fash{
+                display: inline-block;
+            }
         }
      </style>
 </head>
@@ -387,23 +547,45 @@
   <div>
          <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid" style="color: rgb(85, 85, 85);position: fixed;top: 0px;background-color: white;" class="collapse navbar-collapse">
-                <a class="navbar-brand" href="#"><img src="sim.PNG" style="width: 70px;height: 70px;" ></a>
+                <a class="navbar-brand" href="#"><img src="sfm.jpg" style="width: 100px;height: 70px;" ></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#OLA" aria-controls="navbarSupportedContent">
                     <span class="navbar-toggler-icon"></span>
                   </button>
                   <div class="collapse navbar-collapse" id="OLA">  
                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item"><a href="#" class="nav-link">About us</a></li>
-                            <li class="nav-item"><a href="#" class="nav-link">Our Work</a></li>
-                            <li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
-                            <li class="nav-item"><a href="#" class="nav-link">Ebooks</a></li>
-                            <li class="nav-item"><a href="#" class="nav-link">Technologies Comparisons</a></li>
-                            <li class="nav-item"><a href="#" class="nav-link">How it works</a></li>
-                            <li class="nav-item"><a href="#" class="nav-link"><button class="bubu">Contact Us</button></a></li>
+                            <li class="nav-item" style="font-weight: bold;"><a href="#" class="nav-link">About us</a></li>
+                            <li class="nav-item" style="font-weight: bold;"><a href="#" class="nav-link">Our Work</a></li>
+                            <li class="nav-item" style="font-weight: bold;"><a href="#" class="nav-link">Blog</a></li>
+                            <li class="nav-item" style="font-weight: bold;"><a href="#" class="nav-link">Ebooks</a></li>
+                            <li class="nav-item" style="font-weight: bold;"><a href="#" class="nav-link">Technologies Comparisons</a></li>
+                            <li class="nav-item" style="font-weight: bold;"><a href="#" class="nav-link">How it works</a></li>
+                            <li class="nav-item dropdown" style="font-weight: bold;">
+                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" >Projects</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="pixel.html" class="dropdown-item">Pixelgrade</a></li>
+                                        <li><a href="wappalyzer.html" class="dropdown-item">Wappalyser</a></li>
+                                        <li><a href="paypal.html" class="dropdown-item">Paypal</a></li>
+                                        <li><a href="iconfinder.html" class="dropdown-item">Iconfinder</a></li>
+                                        <li><a href="goggledom.html" class="dropdown-item">Google Domain</a></li>
+                                        <li><a href="code.html" class="dropdown-item">Codeacademy</a></li>
+                                        <li><a href="index.html" class="dropdown-item">Whogohost</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item" style="font-weight: bold;"><a href="#" class="nav-link"><button class="bubu" >Contact Us</button></a></li>
+                            
                         </ul>
                 </div>
             </div>
+            <br>
+            <i class="bi bi-person-circle"></i>
+            <i class="bi bi-people-fill"></i>
+            <i class="bi bi-laptop"></i>
+            <i class="bi bi-file-earmark-bar-graph-fill"></i>FOLDED FILE
          </nav>
+
+
+        
+          
 
 
 
@@ -441,26 +623,45 @@
                 Solve your unique business<br> problems by building impactful<br> software products.
 
             </div>-->
-            <div class="momo">
-                <div class="bobo">
-                    <div  style="text-align: center;border: 1px solid rgb(1, 172, 1,0.5);margin-right: 5px;padding: 15px;width: 300px;" class="b">
-                        <h4>Digital products engineering</h4>
+                <marquee behaviour="onhover" direction="side"  id="saba">
+                  <div style="display: flex;flex-direction: row !important;"> 
+                    <div  style="text-align: center;border: 3px solid rgb(1, 172, 1,0.5);margin-right: 5px;padding: 15px;width: 350px;" class="b">
+                        <h4><i class="bi bi-person-circle"></i> Digital products engineering</h4>
                         Solve your unique business<br> problems by building impactful<br> software products.
                     </div>
-                    <div style="text-align: center;border: 1px solid rgb(1, 172, 1,0.5);margin-right: 5px;padding: 15px;width: 300px;" class="b">
-                            <h4>Digital products engineering</h4>
-                            Solve your unique business<br> problems by building impactful<br> software products.
+                    <div style="text-align: center;border: 3px solid pink; margin-right: 5px;padding: 15px;width: 300px;" class="c">
+                            <h4><i class="bi bi-file-bar-graph-fill" style="color: #4501b9;"></i> Cloud engineering</h4>
+                            Gain business agility and flexibility <br> by  using scalability and data <br> security of the cloud.
                     </div>
-                    <div style="text-align: center;border: 1px solid rgb(1, 172, 1,0.5);margin-right: 5px;padding: 15px;width: 300px;" class="b">
-                        <h4>Digital products engineering</h4>
-                        Solve your unique business<br> problems by building impactful<br> software products.
+                    <div style="text-align: center;border: 2px solid lightblue;margin-right: 5px;padding: 15px;width: 300px;" class="b">
+                        <h4><i class="bi bi-laptop"></i> DevOps engineering</h4>
+                        Achieve faster development, fewer  <br>bugs and frequent delivery of  <br>products with our DevOps services.
+
+
                     </div>
-                    <div style="text-align: center;border: 1px solid rgb(1, 172, 1,0.5);margin-right: 5px;padding: 15px;width: 300px;" class="b">
-                        <h4>Digital products engineering</h4>
-                        Solve your unique business<br> problems by building impactful<br> software products.
-        
-                </div> 
-             </div>
+                    <div style="text-align: center;border: 2px solid blue;margin-right: 5px;padding: 15px;width: 300px;" class="c">
+                        <h4>Data Engineering</h4>
+                        Take informed decisions using <br> the insights generated by robust <br> data systems
+                    </div>
+                    <div style="text-align: center;border: 3px solid lightcoral;margin-right: 5px;padding: 15px;width: 300px;" class="b">
+                        <h4>Performance Engineering <br>
+                             and testing</h4>
+                        Develop solutions that  <br>perform optimally under extreme <br> load conditions.
+                    </div>
+                    <div style="text-align: center;border: 2px solid red;margin-right: 5px;padding: 15px;width: 320px;" class="c">
+                        <h4>Digital experience Design</h4>
+                        Create an immersive experience and <br> pleasant interactions for the consumers <br> to have positive brand identity.
+                    </div>
+                    <div style="text-align: center;border: 3px solid lightskyblue;margin-right: 5px;padding: 15px;width: 300px;" class="b">
+                        <h4>CTO as a service</h4>
+                        Get leadership guidance to <br> implement a technical roadmap to <br> reach your business goals.
+                    </div>
+                    <div style="text-align: center;border: 3px solid rgb(1, 172, 1,0.5);margin-right: 5px;padding: 15px;width: 310px;" class="c">
+                        <h4>Application Modernization</h4>
+                        Make your application future ready <br> by improving the tech stack, code,<br> and cloud infrastructure
+                    </div>
+                  </div>  
+                </marquee>
 
 
 
@@ -561,7 +762,8 @@
             </div><br><br><br>
 
              <div class="sama">
-               <h2>people</h2>
+               <img src="peoplelove.PNG" class="swell">
+
               <div class="masa">
 
                 <div class="fra" >  <iframe src="video4.mp4" frameborder="0"></iframe></div>
@@ -591,16 +793,18 @@
             <div class="sac">
                 <div class="green">
                   <!--GREEN-->
-                  icon <h4 class="vis">Visibly <span class="salam">....................................</span></h4>
+                 <h4 class="vis">Visibly <span class="salam">....................................</span></h4>
                   <h4 style="font-weight: bolder;">Software that digitize the eye test<br> Whithin five minutes</h4>
                   <p style="font-size: 20px;">.... a digital platform which could be an alternative to <br>
                 the traditional lab coat and lens approach for....<br>
                 <hr style=" width:120px;font-weight: bolder;" class="more"> 
-                <strong class="more" style="margin-left: -320px;">Read More</strong>  <br><br><br><br>
-                <p style="margin-left: -340px;" >Results</p>
+                <strong style="margin-left: -320px;" class="line">Read More</strong>  <br><br><br><br>
+                <p style="margin-left: -340px;" class="line">Results</p>
+                <p class="bine"><strong>Read More</strong></p><br>
+                <p class="bine"><strong>Results</strong></p>
                 <hr>
-                <h5>Reduced eye test <span class="salam"> .........</span>Complete eye test</h5>
-                Cost by 75% <span class="salam">.........,,</span>     Using smart phone within <br>5-10 minutes
+                <h5>Reduced eye test <span class="salam"> ............</span>Complete eye test</h5>
+                Cost by 75% <span class="salam">.........,,</span>     Using smart phone within 5-10 minutes
 
                 </p>
                 </div>
@@ -611,42 +815,49 @@
                   <h4 style="font-weight: bolder;">EV Changing platform to revolutionize the way we power everything</h4>
                  <p style="font-size: 20px;">FreeWire's Mobi Gen product line offers clean and<br>quiet on site  power</p>
                  <hr style=" width:120px;font-weight: 100;" class="more"> 
-                <strong class="more" style="margin-left: -320px;">Read More</strong>  <br><br><br><br><br>
-               <p style="margin-left: -340px;"> Results</p>
+                <strong  style="margin-left: -320px;" class="line">Read More</strong>  <br class="line"><br class="line"><br class="line"><br class="line"><br>
+               <p style="margin-left: -340px;" class="line"> Results</p>
+               <p class="bine"><strong>Read More</strong></p><br>
+                <p class="bine"><strong>Results</strong></p>
                 <hr>
-                <h5>$125 Million <span class="salam"> .........</span>Used by big companies</h5>
-                Fundind the next Gen Development<span class="salam">.........</span> Walmart,Uber,Volvo,<br><span class="salam">...........,....</span>Linkedin,BellEnergy.
+                <h5>$125 Million <span class="salam"> ...............</span>Used by big companies</h5>
+                Fundind the next Gen Development<span class="salam">.........</span> Walmart,Uber,Volvo,Linkedin.
 
                 </div>
             </div>
             <div class="sac">
                 <div class="pink">
                   <!--GREEN-->
-                  icon <h4 class="vis">Visibly <span class="salam">....................................</span></h4>
-                  <h4 style="font-weight: bolder;">Software that digitize the eye test<br> Whithin five minutes</h4>
-                  <p style="font-size: 20px;">.... a digital platform which could be an alternative to <br>
-                the traditional lab coat and lens approach for....<br>
+                  icon <h4 class="vis">F<i>I</i>H <span class="salam">....................................</span></h4>
+                  <h4 style="font-weight: bolder;">Improving the online web experience<br> For International Hockey Federation</h4>
+                  <br>FIH</h4>
+                  <p style="font-size: 20px;">.... they wanted increased user engagement,  Usability,<br>
+                     descoverability, while providing....<br>
                 <hr style=" width:120px;font-weight: bolder;" class="more"> 
-                <strong class="more" style="margin-left: -320px;">Read More</strong>  <br><br><br><br>
-                <p style="margin-left: -340px;" >Results</p>
+                <strong  style="margin-left: -320px;" class="line">Read More</strong>  <br class="line"><brclass="line"><brclass="line"><br>
+                <p style="margin-left: -340px;" class="line">Results</p>
+                <p class="bine"><strong>Read More</strong></p><br>
+                <p class="bine"><strong>Results</strong></p>
                 <hr>
-                <h5>Reduced eye test <span class="salam"> .........</span>Complete eye test</h5>
-                Cost by 75% <span class="salam">.........,,</span>     Using smart phone within <br>5-10 minutes
+                <h5>Completed website <span class="salam"> .........</span>Scalable website</h5>
+                within 3 months before world cup <span class="salam">.........,,</span>     to handle million of vistitors
 
                 </p>
                 </div>
 
                 <div class="peru">
                   <!--Blue-->
-                  <h2 class="vis" style="margin-top: 30px;">Free Wire <span class="salam">................................,,,</span></h2>
-                  <h4 style="font-weight: bolder;">EV Changing platform to revolutionize the way we power everything</h4>
-                 <p style="font-size: 20px;">FreeWire's Mobi Gen product line offers clean and<br>quiet on site  power</p>
+                  <h2 class="vis" style="margin-top: 30px;">CrayPay <span class="salam">................................,,,</span></h2>
+                  <h4 style="font-weight: bolder;">M-payment solution to modernise retail <br> buying experience</h4>
+                 <p style="font-size: 20px;">......Over 70% consumers says that if they get benefits<br>of loyalty points or perks in retail store , they are...</p>
                  <hr style=" width:120px;font-weight: 100;" class="more"> 
-                <strong class="more" style="margin-left: -320px;">Read More</strong>  <br><br><br><br><br>
-               <p style="margin-left: -340px;"> Results</p>
+                <strong  style="margin-left: -320px;" class="line">Read More</strong>  <br class="line"><brclass="line"><br class="line"><br class="line"><br>
+               <p style="margin-left: -340px;" class="line"> Results</p>
+               <p class="bine"><strong>Read More</strong></p><br>
+                <p class="bine"><strong>Results</strong></p>
                 <hr>
-                <h5>$125 Million <span class="salam"> .........</span>Used by big companies</h5>
-                Fundind the next Gen Development<span class="salam">.........</span> Walmart,Uber,Volvo,<br><span class="salam">...........,....</span>Linkedin,BellEnergy.
+                <h5>100,000+ users <span class="salam"> .........</span>Cryptocurrency</h5>
+                60,000 + retail locations in the USA<span class="salam">.........</span> Was made spendable in retail store
 
                 </div>
             </div>
@@ -655,7 +866,7 @@
             <div>
                 <img src="glass.PNG" class="qaqa" >
             </div>
-            <div>
+            <div class="sall">
                 <p style="text-align: center;">
                <h2> Culture crafted and loved by engineers</h2>
            <p>The Simform culture is crafted to create a truly rewarding experience for engineers, meaning your team will be made up of highly motivated people. As a result our teams are tightly integrated with yours. And that is shown by the love they shower back on us.
@@ -669,7 +880,7 @@
            <div>
             <img src="award.PNG"  class="awa">
            </div>
-           <h2>Our digital perspective on Digital Engineering</h2>
+          <h1> <span style="color: white;">........</span>Our digital perspective on Digital Engineering</h1></span>
            <div class="wale">
             <div class="bale"><img src="guide1.PNG" ><img src="guide2.PNG" ><img src="guuide3.PNG" ></div>
             <div class="bale"><img src="guide4.PNG" ><img src="guide5.PNG" ></div>
@@ -701,6 +912,7 @@
                 <div>
                     <div></div>
                 <ul>
+                    <li style="list-style-type: none;"><i class="bi bi-people-fill"></i></li>
                     <li style="list-style-type: none;">Team of 1000+ Enginners</li>
                     <li style="list-style-type: none;">Access vetted Expert in tech</li>
                     <li style="list-style-type: none;">stack of your choice.</li>
@@ -720,10 +932,117 @@
                 <button style="color: #EF5366;border: 1px solid #EF5366;padding: 10px;background-color: white;">Work with us</button>
                 </div>
             </div>
-         </div><br><br><br>
+         </div><br>
+
+         <div id="carouselExampleIndicators" class="carousel slide flash">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="area1.PNG" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="area2.PNG" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="area3.PNG" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="area4.PNG" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+          <div id="carouselExampleIndicators" class="carousel slide fash" >
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="crop1.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="crop2.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="crop3.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="crop4.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+         <br><br><br>
 
          
-         
+         <div id="bally">
+
+           <div class="bally" >
+            <img src="facesim.PNG" alt="">
+            <img src="clutchsim.PNG" alt="">
+           </div>
+          <div>
+            <ul>
+             <li style="list-style-type: none;"> <p><strong>About Simform</strong></p></li>
+             <li style="list-style-type: none;"><hr style="width: 150px;"></li>
+             <li style="list-style-type: none;">About us</li>
+             <li style="list-style-type: none;">Our partners</li>
+             <li style="list-style-type: none;">How Simform works</li>
+             <li style="list-style-type: none;"> Areas where we serve</li>
+             <li style="list-style-type: none;">Career</li>
+             <li style="list-style-type: none;"> Contact us</li>
+             </ul>
+          </div>
+
+          <div>
+            <ul>
+             <li style="list-style-type: none;"> <p><strong>services</strong></p></li>
+             <li style="list-style-type: none;"><hr style="width: 150px;"></li>
+             <li style="list-style-type: none;">Product Engineering</li>
+             <li style="list-style-type: none;">Cloud and DevOps Engineering</li>
+             <li style="list-style-type: none;">Data Engineering</li>
+             <li style="list-style-type: none;">  Quality Engineering</li>
+             <li style="list-style-type: none;">Talent solutions</li>
+             
+             </ul>
+          </div>
+
+
+          <div>
+            <ul>
+             <li style="list-style-type: none;"> <p><strong>Resources</strong></p></li>
+             <li style="list-style-type: none;"><hr style="width: 150px;"></li>
+             <li style="list-style-type: none;">Blogs</li>
+             <li style="list-style-type: none;">Ebooks</li>
+             <li style="list-style-type: none;">Case studies</li>
+             </ul>
+          </div>
+
+
+         </div>
 
 
 
@@ -732,7 +1051,9 @@
 
 
 
-
+      <div class="dill" >
+        NOTE! This is a student's project and not an attempt to clone existing page...</div>
+        <br><br>
 
 
 
@@ -745,5 +1066,14 @@
 
 
   </div>
+
+
+
+  <script>
+       let sike= document.getElementById('saba');
+       sike.addEventListener('hover',()=>{
+        saba.style.marquee.direction='side'
+       })
+  </script>
 </body>
 </html>
