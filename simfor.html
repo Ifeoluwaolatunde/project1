@@ -127,7 +127,7 @@
            width: 90px;
         }
         .masa iframe{
-            width: 350px;
+            width: 370px;
             height: 300px;
             margin-right: 15px;
         }
@@ -135,6 +135,7 @@
             display: flex;
             flex-direction: column;
             padding: 30px;
+            padding-right:50px;
             justify-content: center;
         }
         .why{
@@ -236,6 +237,12 @@
             }
             swell{
                 display: inline-block;
+            }
+            .fra{
+                background-color:white;
+                color: black;
+                margin-right: 15px;
+                box-shadow: 10px 10px 10px rgb(207, 206, 206);
             }
             @keyframes monday{
             from{
@@ -491,6 +498,8 @@
                 width: 80%;
                 height: 300px;
                 margin-bottom: 5px;
+                background-color: white;
+                box-shadow: 10px 10px 10px rgb(207, 206, 206);
             }
             
             .msag{
@@ -766,16 +775,74 @@
 
               <div class="masa">
 
-                <div class="fra" >  <iframe src="video4.mp4" frameborder="0"></iframe></div>
-                <div class="fra">  <iframe src="video1.mp4" frameborder="0"></iframe></div>
-                <div class="fra">  <iframe src="video1.mp4" frameborder="0"></iframe></div>
+                <div class="fra" >
+                    <div style="display: flex;flex-direction:column ;" id="lo">
+                        <img src="form1.jpg" style="width: 360px;height: 300px;" alt="">
+                        <div>
+                         <button id="la" style="background-color: #EF5366; color: white;font-size: 15px;font-weight: bold;padding: 7px;">Play</button>
+                         <p>Simform has an excellent project <br> management and....</p>
+                         </div>
+                    </div>
+                      <iframe src="video4.mp4" frameborder="0" id="li" style="display: none;"></iframe>
+                    </div>
+                <div class="fra">
+                    <div style="display: flex;flex-direction:column ;" id="po">
+                        <img src="form2.jpg" style="width: 360px;height: 300px;" alt="">
+                        <div>
+                        <button id="pa" style="border-radius: 5px; background-color: #EF5366; color: white;font-size: 15px;font-weight: bold;padding: 7px;">Play</button>
+                        <p>Create a quality product <br> with a well designed UI...</p>
+                        </div>
+                    </div>
+                      <iframe src="video1.mp4" frameborder="0" id="pi" style="display: none;"></iframe>
+                    </div>
+                <div class="fra">
+                    <div style="display: flex;flex-direction:column ;" id="so">
+                        <img src="form3.jpg" style="width: 360px;height: 300px;" alt="">
+                        <div>
+                        <button id="sa" style="border-radius: 5px; background-color: #EF5366; color: white;font-size: 15px;font-weight: bold;padding: 7px;">Play</button>
+                        <p>They have been able <br> to bring up solutions</p>
+                        </div>
+                    </div>
+                      <iframe src="video1.mp4" frameborder="0" id="si" style="display: none;"></iframe>
+                    </div>
               </div><br>
               <div></div>
               <br>
               <div class="masa">
-              <div class="fra"><iframe src="video1.mp4" frameborder="0"></iframe></div>
-              <div class="fra"><iframe src="video4.mp4" frameborder="0"></iframe></div>
-               <div class="fra"> <iframe src="video1.mp4" frameborder="0"></iframe></div>
+
+                 <div class="fra">
+                    <div style="display: flex;flex-direction:column ;" id="ko">
+                        <img src="form4.jpg" style="width: 360px;height: 300px;" alt="">
+                        <div>
+                        <button id="ka" style="border-radius: 5px; background-color: #EF5366; color: white;font-size: 15px;font-weight: bold;padding: 7px;">Play</button>
+                        <p>Proactive in updating the <br>
+                        product design</p>
+                        </div>
+                    </div>
+                  <iframe src="video1.mp4" frameborder="0" id="ki" style="display: none;"></iframe>
+                 </div>
+
+                 <div class="fra">
+                    <div style="display: flex;flex-direction:column ;" id="mo">
+                        <img src="form5.jpg" style="width: 360px;height: 300px;" alt="">
+                        <div>
+                        <button id="ma" style=" border-radius: 5px; background-color: #EF5366; color: white;font-size: 15px;font-weight: bold;padding: 7px;">Play</button>
+                        <p>Simform stands out as a <br> Leadrer in the SaaS aPP...</p>
+                        </div>
+                    </div>
+                    <iframe src="video4.mp4" frameborder="0" id="mi" style="display: none;"></iframe>
+                 </div>
+    
+                   <div class="fra">
+                    <div style="display: flex;flex-direction:column ;" id="bo">
+                        <img src="form6.jpg" style="width: 360px;height: 300px;" alt="">
+                        <div>
+                         <button id="ba" style="border-radius: 5px; background-color: #EF5366; color: white;font-size: 15px;font-weight: bold;padding: 7px;">Play</button>
+                         <p>Tech partner  with product <br>engineering expertise an...</p>
+                         </div>
+                    </div>
+                      <iframe src="video1.mp4" frameborder="0" id="bi" style="display: none;"></iframe>
+                    </div>
               </div>
 
              </div>
@@ -895,7 +962,11 @@
 
          <div class="sasa">
             <div >
-             <iframe src="VIDEO1.mp4" frameborder="0" class="msag"></iframe>
+                <div style="display: flex;flex-direction:column ;" id="co">
+                    <img src="form7.jpg" style="width: 500px;height: 400px;" alt="">
+                    <button id="ca" style=" border-radius: 5px; background-color: #EF5366; color: white;font-size: 15px;font-weight: bold;padding: 7px;">Play</button>
+                </div>
+             <iframe src="VIDEO1.mp4" style="display: none;" frameborder="0" class="msag" id="ci"></iframe>
             </div>
              <div class="marga">
                 <h2 style="font-weight: bolder;">Simform Gaurantee</h2>
@@ -1070,9 +1141,47 @@
 
 
   <script>
-       let sike= document.getElementById('saba');
-       sike.addEventListener('hover',()=>{
-        saba.style.marquee.direction='side'
+       let like= document.getElementById('la');
+       like.addEventListener('click',()=>{
+        document.getElementById('lo').style.display='none'
+        document.getElementById('li').style.display='inline-block'
+       })
+
+       let pike= document.getElementById('pa');
+       pike.addEventListener('click',()=>{
+        document.getElementById('po').style.display='none'
+        document.getElementById('pi').style.display='inline-block'
+       })
+
+       let sike= document.getElementById('sa');
+       sike.addEventListener('click',()=>{
+        document.getElementById('so').style.display='none'
+        document.getElementById('si').style.display='inline-block'
+       })
+
+       let kike= document.getElementById('ka');
+       kike.addEventListener('click',()=>{
+        document.getElementById('ko').style.display='none'
+        document.getElementById('ki').style.display='inline-block'
+       })
+       
+       let mike= document.getElementById('ma');
+       mike.addEventListener('click',()=>{
+        document.getElementById('mo').style.display='none'
+        document.getElementById('mi').style.display='inline-block'
+       })
+
+       let bike= document.getElementById('ba');
+       sike.addEventListener('click',()=>{
+        document.getElementById('bo').style.display='none'
+        document.getElementById('bi').style.display='inline-block'
+       })
+
+
+       let cike= document.getElementById('ca');
+       cike.addEventListener('click',()=>{
+        document.getElementById('co').style.display='none'
+        document.getElementById('ci').style.display='inline-block'
        })
   </script>
 </body>
