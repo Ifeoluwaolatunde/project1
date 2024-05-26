@@ -160,6 +160,7 @@
           tobi=false; 
         }else if(!passwordin.value.match(passformat)){
           passworderromessage.textContent='Please input a valid password which include digit,special character and alphabet';
+          passworderromessage.style.color='red'
           tobi=false;    
         }else{
            passworderromessage.textContent=' password is valid '; 
